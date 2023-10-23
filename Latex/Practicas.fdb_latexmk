@@ -1,7 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1698078918 "/home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex" "Practicas.pdf" "Practicas" 1698078918 0
+["pdflatex"] 1698081614 "/home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex" "Practicas.pdf" "Practicas" 1698081614 0
   "/etc/texmf/web2c/texmf.cnf" 1697468406 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex" 1698078918 984 ff51ba4786ef000bccc1595f72afe6fc ""
+  "/home/torres/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1697474823 11524 b6fca1e6717a62e8f4e5728d3e744f0d ""
+  "/home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex" 1698081613 2157 f6341ae7329cd159f707fc68dddd169b ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -24,7 +26,9 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
@@ -48,8 +52,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1697468412 125915 807ff72f6023b33a59c427bfd156a3d1 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1697468428 6475481 5e0faf0df09b541759db8328f50c952a ""
-  "Practicas.aux" 1698078918 120 0421cbcefd99c40196526f06a824bb53 "pdflatex"
-  "Practicas.tex" 1698078918 984 ff51ba4786ef000bccc1595f72afe6fc ""
+  "Practicas.aux" 1698081614 120 0421cbcefd99c40196526f06a824bb53 "pdflatex"
+  "Practicas.tex" 1698081613 2157 f6341ae7329cd159f707fc68dddd169b ""
   (generated)
   "Practicas.aux"
   "Practicas.log"
