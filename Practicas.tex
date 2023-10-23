@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}  % For \mathbb command
+
+\title{Practicas MC}
+\date{\today}
+\author{Juan Luis Torres Ramos}
+
+\begin{document}
+    \pagenumbering{gobble}
+    \maketitle
+    \newpage
+    \pagenumbering{arabic}
+
+    \section{}
+    Encuentra una gramática libre del contexto para generar cada uno de los siguientes lenguajes
+
+    \begin{enumerate}
+        \item $L = \{a^i b^j \, | \, i, j \in \mathbb{N}, \, i \leq j\}$.
+        \item $L = \{a^i b^j a^j b^i \, | \, i, j \in \mathbb{N}\}$.
+        \item $L = \{a^i b^i a^j b^j \, | \, i, j \in \mathbb{N}\}$.
+        \item $L = \{a_i b_i \,|\, i \in \mathbb{N}\} \cup \{b_i a_i \,|\, i \in \mathbb{N\}}$.
+        \item $L = \{uu^{-1} \mid u \in \{a, b\}^*\}$.
+        \item $L = \{a^i b^j c^{i+j} \, | \, i, j \in \mathbb{N}\}$.    
+    \end{enumerate}
+
+    \begin{flushleft}
+        donde $\mathbb{N}$ es el conjunto de los numeros naturales incluyendo el 0
+    \end{flushleft}
+
+    \end{document}
