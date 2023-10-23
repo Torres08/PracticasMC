@@ -1,9 +1,9 @@
-PWD /home/torres/Documents/UNI/MC/LateX
+PWD /home/torres/Documents/Github/PracticasMC/Latex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/torres/Documents/UNI/MC/LateX/Practicas.tex
+INPUT /home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex
 OUTPUT Practicas.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
