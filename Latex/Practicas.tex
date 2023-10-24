@@ -32,14 +32,17 @@
 
         \newpage
 
+
+        % APARTADO 1
+
         \subsection*{A. $L = \{a^i b^j \, | \, i, j \in \mathbb{N}, \, i \leq j\}$.}
 
         \begin{flushleft}
             \begin{enumerate}
-                \item Determinar los símbolos terminales y no terminales que componen las cadenas en el lenguaje. En este caso, los símbolos terminales son $\{a,b\}$, y el símbolo no terminal será $S$.
-                \item Determinar el símbolo inicial, determino que es $S$.
+                \item Los símbolos terminales serán $\{a,b\}$ y los simbolos no terminales serán $S$ y $B$.
+                \item El símbolo inicial será $S$.
                 \item Analizar el lenguaje para determinar qué se pide. En este caso, se pide que la cadena tenga un número de $a$ menor o igual que el número de $b$. Por ejemplo, $aabbb$ y $aabb$ pertenecen al lenguaje, pero $aab$ no.
-                \item Determinar las reglas de producción:
+                \item Determino las reglas de producción:
                 \begin{itemize}
                     \item $S \rightarrow \epsilon$ (genero la cadena vacía).
                     \item $S \rightarrow aSb$.
@@ -50,7 +53,8 @@
                 
                 \vspace{\baselineskip} % paso linea
 
-                \begin{figure}[h]
+                % Imagenes en matriz
+                \begin{figure}[h] 
                     \centering
                     \begin{subfigure}[b]{0.45\textwidth}
                         \centering
@@ -83,12 +87,71 @@
                     \label{fig:matrix}
                 \end{figure}
 
-                    
-                    
                 
+
+                 % APARTADO 2
 
             \end{enumerate}
         \end{flushleft}
 
+
+        \newpage % paso pagina
+        \subsection*{B. $L = \{a^i b^j a^j b^i \, | \, i, j \in \mathbb{N}\}$.}
+        \begin{flushleft}
+            \begin{enumerate}
+
+                \item Los símbolos terminales serán $\{a,b\}$ y los simbolos no terminales serán $S$ y $B$.
+
+                \item El símbolo inicial será $S$.
+            
+                \item El lenguaje nos pide generar una cadena de 4 caracteres donde primero se generen $a^i b^j$ y luego $a^j b^i$, es decir en los extremos un numero caracteres $i$ y en los caracteres del centro un numero de caracteres $j$. 
+                Por ejemplo, $aababb$ y $ab$ pertenecen al lenguaje, pero $aabbab$ no.
+
+                \item Determino las reglas de producción:
+                \begin{itemize}
+                    \item $S \rightarrow aSb$ (genero mismo numero de caracteres en los extremos).
+                    \item $S \rightarrow B$.
+                    \item $B \rightarrow bBa$ (genero mismo numero de caracteres en el centro).
+                    \item $B \rightarrow \epsilon$ (genero la cadena vacía).
+                \end{itemize}
+
+                \item compruebo con JFLAP que la gramática es correcta.
+
+                % Imagenes en matriz
+                \begin{figure}[h] 
+                    \centering
+                    \begin{subfigure}[b]{0.4\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/produccion2.png}
+                        \caption{la producción}
+                        \label{fig:label5}
+                    \end{subfigure}
+                    \hfill
+                    \begin{subfigure}[b]{0.4\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafo1.png}
+                        \caption{la cadena $aababb$}
+                        \label{fig:label6}
+                    \end{subfigure}
+                    \vspace{0.5cm} 
+                    \\
+                    \begin{subfigure}[b]{0.4\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafo2.png}
+                        \caption{la cadena $ab$}
+                        \label{fig:label7}
+                    \end{subfigure}
+                    \hfill
+                    \begin{subfigure}[b]{0.4\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafo3.png}
+                        \caption{la cadena $aabbab$}
+                        \label{fig:label8}
+                    \end{subfigure}
+                    \label{fig:matrix}
+                \end{figure}
+
+            \end{enumerate}
+        \end{flushleft}    
 
     \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.16)  24 OCT 2023 15:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.16)  24 OCT 2023 16:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -138,7 +138,11 @@ Package caption Info: Standard document class detected.
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box53
-) (./Practicas.aux)
+) (./Practicas.aux
+
+LaTeX Warning: Label `fig:matrix' multiply defined.
+
+)
 \openout1 = `Practicas.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -189,37 +193,62 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./Imagenes/produccion1.png, id=19, 350.30875pt x 201.75375pt>
 File: ./Imagenes/produccion1.png Graphic file (type png)
 <use ./Imagenes/produccion1.png>
-Package pdftex.def Info: ./Imagenes/produccion1.png  used on input line 57.
+Package pdftex.def Info: ./Imagenes/produccion1.png  used on input line 61.
 (pdftex.def)             Requested size: 155.24895pt x 89.41533pt.
 <./Imagenes/grafoaaabb.png, id=20, 285.065pt x 112.42pt>
 File: ./Imagenes/grafoaaabb.png Graphic file (type png)
 <use ./Imagenes/grafoaaabb.png>
-Package pdftex.def Info: ./Imagenes/grafoaaabb.png  used on input line 64.
+Package pdftex.def Info: ./Imagenes/grafoaaabb.png  used on input line 68.
 (pdftex.def)             Requested size: 155.24895pt x 61.22394pt.
 <./Imagenes/grafoaabbb.png, id=21, 587.19376pt x 583.17876pt>
 File: ./Imagenes/grafoaabbb.png Graphic file (type png)
 <use ./Imagenes/grafoaabbb.png>
-Package pdftex.def Info: ./Imagenes/grafoaabbb.png  used on input line 72.
+Package pdftex.def Info: ./Imagenes/grafoaabbb.png  used on input line 76.
 (pdftex.def)             Requested size: 155.24895pt x 154.18568pt.
 <./Imagenes/grafoaabb.png, id=22, 590.205pt x 583.17876pt>
 File: ./Imagenes/grafoaabb.png Graphic file (type png)
 <use ./Imagenes/grafoaabb.png>
-Package pdftex.def Info: ./Imagenes/grafoaabb.png  used on input line 79.
+Package pdftex.def Info: ./Imagenes/grafoaabb.png  used on input line 83.
 (pdftex.def)             Requested size: 155.24895pt x 153.3937pt.
- [2 <./Imagenes/produccion1.png> <./Imagenes/grafoaaabb.png> <./Imagenes/grafoaabbb.png> <./Imagenes/grafoaabb.png>] (./Practicas.aux) ) 
+ [2 <./Imagenes/produccion1.png> <./Imagenes/grafoaaabb.png> <./Imagenes/grafoaabbb.png> <./Imagenes/grafoaabb.png>]
+<./Imagenes/produccion2.png, id=31, 283.0575pt x 212.795pt>
+File: ./Imagenes/produccion2.png Graphic file (type png)
+<use ./Imagenes/produccion2.png>
+Package pdftex.def Info: ./Imagenes/produccion2.png  used on input line 125.
+(pdftex.def)             Requested size: 137.9979pt x 103.74443pt.
+<./Imagenes/grafo1.png, id=32, 655.44875pt x 603.25375pt>
+File: ./Imagenes/grafo1.png Graphic file (type png)
+<use ./Imagenes/grafo1.png>
+Package pdftex.def Info: ./Imagenes/grafo1.png  used on input line 132.
+(pdftex.def)             Requested size: 137.9979pt x 127.00919pt.
+<./Imagenes/grafo2.png, id=33, 649.42625pt x 601.24625pt>
+File: ./Imagenes/grafo2.png Graphic file (type png)
+<use ./Imagenes/grafo2.png>
+Package pdftex.def Info: ./Imagenes/grafo2.png  used on input line 140.
+(pdftex.def)             Requested size: 137.9979pt x 127.75166pt.
+<./Imagenes/grafo3.png, id=34, 273.02pt x 84.315pt>
+File: ./Imagenes/grafo3.png Graphic file (type png)
+<use ./Imagenes/grafo3.png>
+Package pdftex.def Info: ./Imagenes/grafo3.png  used on input line 147.
+(pdftex.def)             Requested size: 137.9979pt x 42.61667pt.
+ [3 <./Imagenes/produccion2.png> <./Imagenes/grafo1.png> <./Imagenes/grafo2.png> <./Imagenes/grafo3.png>] (./Practicas.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4047 strings out of 478051
- 66396 string characters out of 5840942
- 1856330 words of memory out of 5000000
- 24157 multiletter control sequences out of 15000+600000
+ 4083 strings out of 478051
+ 67211 string characters out of 5840942
+ 1857330 words of memory out of 5000000
+ 24189 multiletter control sequences out of 15000+600000
  521722 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  67i,8n,77p,332b,679s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/torres/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Practicas.pdf (3 pages, 172109 bytes).
+Output written on Practicas.pdf (4 pages, 206058 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
