@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.16)  23 OCT 2023 19:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.16)  24 OCT 2023 15:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -95,9 +95,48 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen152
+\captionmargin=\dimen153
+\caption@leftmargin=\dimen154
+\caption@rightmargin=\dimen155
+\caption@width=\dimen156
+\caption@indent=\dimen157
+\caption@parindent=\dimen158
+\caption@hangindent=\dimen159
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count271
+\c@continuedfloat=\count272
+)
+\c@subfigure=\count273
+\c@subtable=\count274
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count271
+\l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box53
 ) (./Practicas.aux)
 \openout1 = `Practicas.aux'.
@@ -116,6 +155,27 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count276
+\scratchdimen=\dimen160
+\scratchbox=\box54
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen161
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -125,20 +185,41 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1] (./Practicas.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1]
+<./Imagenes/produccion1.png, id=19, 350.30875pt x 201.75375pt>
+File: ./Imagenes/produccion1.png Graphic file (type png)
+<use ./Imagenes/produccion1.png>
+Package pdftex.def Info: ./Imagenes/produccion1.png  used on input line 57.
+(pdftex.def)             Requested size: 155.24895pt x 89.41533pt.
+<./Imagenes/grafoaaabb.png, id=20, 285.065pt x 112.42pt>
+File: ./Imagenes/grafoaaabb.png Graphic file (type png)
+<use ./Imagenes/grafoaaabb.png>
+Package pdftex.def Info: ./Imagenes/grafoaaabb.png  used on input line 64.
+(pdftex.def)             Requested size: 155.24895pt x 61.22394pt.
+<./Imagenes/grafoaabbb.png, id=21, 587.19376pt x 583.17876pt>
+File: ./Imagenes/grafoaabbb.png Graphic file (type png)
+<use ./Imagenes/grafoaabbb.png>
+Package pdftex.def Info: ./Imagenes/grafoaabbb.png  used on input line 72.
+(pdftex.def)             Requested size: 155.24895pt x 154.18568pt.
+<./Imagenes/grafoaabb.png, id=22, 590.205pt x 583.17876pt>
+File: ./Imagenes/grafoaabb.png Graphic file (type png)
+<use ./Imagenes/grafoaabb.png>
+Package pdftex.def Info: ./Imagenes/grafoaabb.png  used on input line 79.
+(pdftex.def)             Requested size: 155.24895pt x 153.3937pt.
+ [2 <./Imagenes/produccion1.png> <./Imagenes/grafoaaabb.png> <./Imagenes/grafoaabbb.png> <./Imagenes/grafoaabb.png>] (./Practicas.aux) ) 
 Here is how much of TeX's memory you used:
- 1723 strings out of 478051
- 24643 string characters out of 5840942
- 1857330 words of memory out of 5000000
- 21885 multiletter control sequences out of 15000+600000
- 520177 words of font info for 63 fonts, out of 8000000 for 9000
+ 4047 strings out of 478051
+ 66396 string characters out of 5840942
+ 1856330 words of memory out of 5000000
+ 24157 multiletter control sequences out of 15000+600000
+ 521722 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,6n,62p,321b,258s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/torres/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Practicas.pdf (2 pages, 116987 bytes).
+ 67i,8n,77p,332b,679s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/torres/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Practicas.pdf (3 pages, 172109 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

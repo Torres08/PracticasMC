@@ -1,7 +1,7 @@
 
 
 \documentclass{article}
-\usepackage{amsmath, amssymb}  % For \mathbb command
+\usepackage{amsmath, amssymb, graphicx, subcaption}  % For \mathbb command
 
 
     \title{Practicas MC}
@@ -30,6 +30,8 @@
             donde $\mathbb{N}$ es el conjunto de los numeros naturales incluyendo el 0
         \end{flushleft}
 
+        \newpage
+
         \subsection*{A. $L = \{a^i b^j \, | \, i, j \in \mathbb{N}, \, i \leq j\}$.}
 
         \begin{flushleft}
@@ -45,6 +47,45 @@
                 \end{itemize}
 
                 \item compruebo con JFLAP que la gramática es correcta.
+                
+                \vspace{\baselineskip} % paso linea
+
+                \begin{figure}[h]
+                    \centering
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/produccion1.png}
+                        \caption{la producción}
+                        \label{fig:label1}
+                    \end{subfigure}
+                    \hfill
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafoaaabb.png}
+                        \caption{la cadena $aaabb$}
+                        \label{fig:label2}
+                    \end{subfigure}
+                    \vspace{0.5cm} 
+                    \\
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafoaabbb.png}
+                        \caption{la cadena $aabbb$}
+                        \label{fig:label3}
+                    \end{subfigure}
+                    \hfill
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafoaabb.png}
+                        \caption{la cadena $aabb$}
+                        \label{fig:label4}
+                    \end{subfigure}
+                    \label{fig:matrix}
+                \end{figure}
+
+                    
+                    
+                
 
             \end{enumerate}
         \end{flushleft}
