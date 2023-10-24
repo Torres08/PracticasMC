@@ -9,12 +9,31 @@
     \author{Juan Luis Torres Ramos}
 
     \begin{document}
-        \pagenumbering{gobble}
-        \maketitle
-        \newpage
-        \pagenumbering{arabic}
+        
+        % 
+        % Portada
+        % \pagenumbering{gobble}
+        % \maketitle
+        % \newpage
+        % \pagenumbering{arabic}
 
-        \section{}
+        \begin{titlepage}
+            \centering
+            {\includegraphics[width=1\textwidth]{./Imagenes/logo_universidad_de_granada.png}\par}
+            \vspace{1cm}
+            {\scshape\Large Escuela Tecnica Superior de Ingenieria Informatica y Telecomunicaciones \par}
+            \vspace{2.5cm}
+            {\scshape\Huge Practicas Modelos de Computación \par}
+            \vspace{1cm}
+            {\itshape\Large  Grupo B3 \par} 
+            \vfill
+            {\Large Juan Luis Torres Ramos \par}
+            {\Large 24 Octubre 2023 \par}
+            \end{titlepage}
+
+
+        % introducción
+        \section*{Practica 1}
         Encuentra una gramática libre del contexto para generar cada uno de los siguientes lenguajes:
 
         \begin{enumerate}
@@ -30,9 +49,28 @@
             donde $\mathbb{N}$ es el conjunto de los numeros naturales incluyendo el 0
         \end{flushleft}
 
+
+        \vspace{\baselineskip} % paso linea
+
+
+        % Pasos que voy a seguir para resolver el ejercicio
+        \begin{flushleft}
+            
+            \subsubsection*{Pasos para resolver el ejercicio:}
+                        
+            \begin{enumerate}
+                \item Determinar los símbolos terminales y no terminales.
+                \item Determinar el símbolo inicial.
+                \item Analizar el lenguaje para determinar qué se pide.
+                \item Determinar las reglas de producción.
+                \item Comprobar con JFLAP  
+            \end{enumerate}
+        \end{flushleft}
+
+
         \newpage
 
-
+        % 
         % APARTADO 1
 
         \subsection*{A. $L = \{a^i b^j \, | \, i, j \in \mathbb{N}, \, i \leq j\}$.}
@@ -84,16 +122,18 @@
                         \caption{la cadena $aabb$}
                         \label{fig:label4}
                     \end{subfigure}
-                    \label{fig:matrix}
+                    \label{fig:matrix1}
                 \end{figure}
 
                 
 
-                 % APARTADO 2
+                 
 
             \end{enumerate}
         \end{flushleft}
 
+        % 
+        % Apartado 2
 
         \newpage % paso pagina
         \subsection*{B. $L = \{a^i b^j a^j b^i \, | \, i, j \in \mathbb{N}\}$.}
@@ -148,10 +188,16 @@
                         \caption{la cadena $aabbab$}
                         \label{fig:label8}
                     \end{subfigure}
-                    \label{fig:matrix}
+                    \label{fig:matrix2}
                 \end{figure}
 
             \end{enumerate}
-        \end{flushleft}    
+        \end{flushleft}
+        
+        
+        % 
+        % Apartado 3
+
+
 
     \end{document}
