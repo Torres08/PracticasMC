@@ -28,7 +28,8 @@
             {\itshape\Large  Grupo B3 \par} 
             \vfill
             {\Large Juan Luis Torres Ramos \par}
-            {\Large 24 Octubre 2023 \par}
+            \vspace{0.5cm}
+            {\large 24 Octubre 2023 \par}
             \end{titlepage}
 
 
@@ -197,6 +198,26 @@
         
         % 
         % Apartado 3
+        \newpage % paso pagina
+        \subsection*{C. $L = \{a^i b^i a^j b^j \, | \, i, j \in \mathbb{N}\}$.}
+        \begin{flushleft}
+            \begin{enumerate}
+                \item Los símbolos terminales serán $\{a,b\}$ y los simbolos no terminales serán $S$ y $B$.
+                \item El símbolo inicial será $S$ $B$.
+                \item El lenguaje nos pide generar cadenas de 4 caracteres de la forma $abab$ donde los dos primeros caracteres tengan 
+                el mismo nuemoor de caracteres y para los dos ultimos caracteres tambien tengan la misma cantidad.Ejemplos de cadenas serían $aabbaabb$ ,$aabbab$ pero no acepta $aaba$
+                \item Determino las reglas de producción:
+                \begin{itemize}
+                    \item $S \rightarrow AA$ (simbolo inicial).
+                    \item $A \rightarrow aSb$. (genero $\{a^i b^i | i \in \mathbb{N}\}$).
+                    \item $A \rightarrow \epsilon$ (genero la cadena vacía).
+                \end{itemize}
+
+                \item compruebo con JFLAP que la gramática es correcta.
+                
+
+            \end{enumerate}
+        \end{flushleft}
 
 
 
