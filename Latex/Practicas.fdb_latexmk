@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1698687790 "/home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex" "Practicas.pdf" "Practicas" 1698687791 0
+["pdflatex"] 1698689686 "/home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex" "Practicas.pdf" "Practicas" 1698689687 0
   "/etc/texmf/web2c/texmf.cnf" 1697468406 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/torres/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1697474823 11524 b6fca1e6717a62e8f4e5728d3e744f0d ""
-  "/home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex" 1698687789 18673 3820cb3d907a3cfbdaac62b6c739f33c ""
+  "/home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex" 1698689686 20693 773dc450c3f6704cd1cacdec7a798dad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -102,8 +102,8 @@
   "Imagenes/produccion4.png" 1698685788 2343 a397cd06a9b94bca23ffb3cc7d62438f ""
   "Imagenes/produccion5.png" 1698686515 1417 085bec4be2a4b182db93c263fbd45873 ""
   "Imagenes/produccion6.png" 1698687566 1744 7c90a05e4ff07bc8e87c19cd37d664cb ""
-  "Practicas.aux" 1698687791 2150 0b1075e5a27159bfa5c167701c3746dc "pdflatex"
-  "Practicas.tex" 1698687789 18673 3820cb3d907a3cfbdaac62b6c739f33c ""
+  "Practicas.aux" 1698689687 2151 1f6f0338d0dab98ac005ad2aa6f88ec5 "pdflatex"
+  "Practicas.tex" 1698689686 20693 773dc450c3f6704cd1cacdec7a798dad ""
   (generated)
   "Practicas.aux"
   "Practicas.log"
