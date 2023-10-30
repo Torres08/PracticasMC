@@ -203,7 +203,7 @@
         \begin{flushleft}
             \begin{enumerate}
                 \item Los símbolos terminales serán $\{a,b\}$ y los simbolos no terminales serán $S$ y $B$.
-                \item El símbolo inicial será $S$ $B$.
+                \item El símbolo inicial será $S$.
                 \item El lenguaje nos pide generar cadenas de 4 caracteres de la forma $abab$ donde los dos primeros caracteres tengan 
                 el mismo nuemoor de caracteres y para los dos ultimos caracteres tambien tengan la misma cantidad.Ejemplos de cadenas serían $aabbaabb$ ,$aabbab$ pero no acepta $aaba$
                 \item Determino las reglas de producción:
@@ -261,6 +261,56 @@
         \subsection*{D. $L = \{a_i b_i \,|\, i \in \mathbb{N}\} \cup \{b_i a_i \,|\, i \in \mathbb{N\}}$.}
         \begin{flushleft}
             \begin{enumerate}
+                \item Los símbolos terminales serán $\{a,b\}$ y los simbolos no terminales serán $S$ , $A$ $B$.
+                \item El símbolo inicial será $S$ .
+                \item Combina dos conjuntos de cadenas: el primero contiene cadenas de la forma $\{a_i b_i \,|\, i \in \mathbb{N}\}$, y el segundo contiene cadenas de la forma $\{b_i a_i \,|\, i \in \mathbb{N}\}$.Las cadenas $aabb$ $bbaa$ lo cumplen mientras $abab$ no lo cumple Lo resolvemos por partes
+                \item Determino las reglas de producción:
+                
+                \begin{itemize}
+                    \item Podemos generar $\{a_i b_i \,|\, i \in \mathbb{N}\}. $
+                        \subitem $A \rightarrow aAb$ , $A \rightarrow \epsilon$. 
+                    \item Por otro lado $\{b_i a_i \,|\, i \in \mathbb{N}\}$.
+                        \subitem $B \rightarrow bBa$ , $B \rightarrow \epsilon$ . 
+                    \item El lenguaje L se puede generar añadiendo .
+                        \subitem $S \rightarrow A$ , $S \rightarrow B$ . 
+                \end{itemize}
+
+                \item compruebo con JFLAP que la gramática es correcta.
+                % Imagenes en matriz
+                \begin{figure}[h] 
+                    \centering
+                    \begin{subfigure}[b]{0.25\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/produccion4.png}
+                        \caption{la producción}
+                        \label{fig:label14}
+                    \end{subfigure}
+                    \hfill
+                    \begin{subfigure}[b]{0.4\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafoabab.png}
+                        \caption{la cadena $abab$}
+                        \label{fig:label15}
+                    \end{subfigure}
+                    \vspace{0.5cm} 
+                    \\
+                    \begin{subfigure}[b]{0.4\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafo7.png}
+                        \caption{la cadena $aabb$}
+                        \label{fig:label16}
+                    \end{subfigure}
+                    \hfill
+                    \begin{subfigure}[b]{0.4\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafobbbaaa.png}
+                        \caption{la cadena $bbbaaa$}
+                        \label{fig:label17}
+                    \end{subfigure}
+                    \label{fig:matrix4}
+                \end{figure}
+
+
 
             \end{enumerate}
         \end{flushleft}
@@ -270,7 +320,52 @@
         \subsection*{E. $L = \{uu^{-1} \mid u \in \{a, b\}^*\}$.}
         \begin{flushleft}
             \begin{enumerate}
-                
+                \item Los símbolos terminales serán $\{a,b\}$ y los simbolos no terminales serán $S$.
+                \item El símbolo inicial será $S$.
+                \item Analizar el lenguaje para determinar qué se pide. En este caso,se pide generar 
+                cadenas que son palíndromos formados por caracteres 'a' y 'b'. Cadenas que pertenecen al lenguaje son $abba$ y $bbaabb$ pero no $bbabb$. 
+                \item Determino las reglas de producción:
+                \begin{itemize}
+                    \item $S \rightarrow \epsilon$ (genero la cadena vacía).
+                    \item $S \rightarrow aSa$.
+                    \item $S \rightarrow bSb$.
+                \end{itemize}
+
+                \item compruebo con JFLAP que la gramática es correcta.
+                 % Imagenes en matriz
+                 \begin{figure}[h] 
+                    \centering
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/produccion5.png}
+                        \caption{la producción}
+                        \label{fig:label18}
+                    \end{subfigure}
+                    \hfill
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafo8.png}
+                        \caption{la cadena $bbab$}
+                        \label{fig:label19}
+                    \end{subfigure}
+                    \vspace{0.5cm} 
+                    \\
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafo9.png}
+                        \caption{la cadena $bbaabb$}
+                        \label{fig:label20}
+                    \end{subfigure}
+                    \hfill
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafo10.png}
+                        \caption{la cadena $abba$}
+                        \label{fig:label21}
+                    \end{subfigure}
+                    \label{fig:matrix5}
+                \end{figure}
+
             \end{enumerate}
         \end{flushleft}
 
@@ -280,7 +375,58 @@
         \subsection*{F. $L = \{a^i b^j c^{i+j} \, | \, i, j \in \mathbb{N}\}$.}
         \begin{flushleft}
             \begin{enumerate}
+                \item Los símbolos terminales serán $\{a,b,c\}$ y los simbolos no terminales serán $S$.
+                \item El símbolo inicial será $S$.
+                \item En este caso,se pide generar cadenas donde 
+                la cantidad de 'a's y 'b's es igual y la cantidad total de 'c's es la suma de las cantidades de 'a' y 'b'
+                . Cadenas que cumplen la gramatica son $abbccc$ y $aaabcccc$ pero no $bacc$
+                \item Determino las reglas de producción:
+                \begin{itemize}
+                    \item $S \rightarrow aSc$ (genero la cadena vacía).
+                    \item $S \rightarrow B$.
+                    \item $B \rightarrow bBc$.
+                    \item $B \rightarrow \epsilon$.
+                \end{itemize}
+                \item compruebo con JFLAP que la gramática es correcta.
                 
+                % Imagenes en matriz
+                \begin{figure}[h] 
+                    \centering
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/produccion6.png}
+                        \caption{la producción}
+                        \label{fig:label22}
+                    \end{subfigure}
+                    \hfill
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grado11.png}
+                        \caption{la cadena $bacc$}
+                        \label{fig:label23}
+                    \end{subfigure}
+                    \vspace{0.5cm} 
+                    \\
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafo12.png}
+                        \caption{la cadena $abbccc$}
+                        \label{fig:label24}
+                    \end{subfigure}
+                    \hfill
+                    \begin{subfigure}[b]{0.45\textwidth}
+                        \centering
+                        \includegraphics[width=\textwidth]{./Imagenes/grafo13.png}
+                        \caption{la cadena $aaabcccc$}
+                        \label{fig:label25}
+                    \end{subfigure}
+                    \label{fig:matrix6}
+                \end{figure}
+
+
             \end{enumerate}
         \end{flushleft}
+
+
+
     \end{document}
