@@ -1,0 +1,123 @@
+
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphicx, subcaption, tabularx}  % For \mathbb command
+
+
+    \title{Practicas MC}
+    \date{\today}
+    \author{Juan Luis Torres Ramos}
+
+    \begin{document}
+        
+        % 
+        % Portada
+        % \pagenumbering{gobble}
+        % \maketitle
+        % \newpage
+        % \pagenumbering{arabic}
+
+        \begin{titlepage}
+            \centering
+            {\includegraphics[width=1\textwidth]{./Imagenes/logo_universidad_de_granada.png}\par}
+            \vspace{1cm}
+            {\scshape\Large Escuela Tecnica Superior de Ingenieria Informatica y Telecomunicaciones \par}
+            \vspace{2.5cm}
+            {\scshape\Huge Practicas Modelos de Computación \par}
+            \vspace{1cm}
+            {\itshape\Large  Grupo B3 \par} 
+            \vfill
+            {\Large Juan Luis Torres Ramos \par}
+            \vspace{0.5cm}
+            {\large 24 Octubre 2023 \par}
+        \end{titlepage}
+
+
+        % 
+        % Ejercicio 1
+        %
+
+        \section*{Ejercicio 1}
+            Obtener un modelo de calculo para $L = \{ U \mid U \in \{a, b\}^{\pm} \text{ y } N_a(U) = N_b(U) \}$.
+        
+            \vspace{\baselineskip} % paso linea
+
+            \textit{
+            diapositiva 1 resuelto, pagina 55 del tema 1 de MC\\
+            la gramatica generada por este lenguaje se simula en JFLag dando su arbol de derivacion y sacando por pantalla varias salidas
+            }
+        \newpage
+
+
+
+
+        % 
+        % Ejercicio 2
+        %
+
+        \section*{Ejercicio 2}
+        \begin{enumerate}
+            \item determina si la gramática $G = (\{S,A,B\}, \{a,b,c,d\}. P,S)$ donde $P$ es el conjunto regla producción
+            genera un lenguaje tipo 3.
+            
+            \begin{tabularx}{\textwidth}{XXX}
+                $S \rightarrow AB$ & $A \rightarrow Ab$ & $A \rightarrow a$\\
+                $B \rightarrow cB$ & $B \rightarrow d$\\
+            \end{tabularx}
+            
+
+            \item obtener el ATDM, (automanta deterministico minimal)
+            Obtener el modelo de cálculo más optimo para resolver el problema del apartado A
+        \end{enumerate}
+        
+        \vspace{\baselineskip} % paso linea
+
+        \textit{
+        Pregunta resuelta en la diapositiva 91 del tema 1 de MC.
+        La gramática generada por este lenguaje se simula en JFlag,
+        dando su árbol de derivación y sacando por pantalla varias
+        salidas
+        }
+
+        \newpage
+
+        % 
+        % Ejercicio 3
+        %
+        \section*{Ejercicio 3}
+        construir una expresión regular para las palabras en las que numeros de ceros es par
+        
+        \vspace{\baselineskip} % paso linea
+
+        Resultado: $$ 1*(01*01*)*$$
+        
+
+        \vspace{\baselineskip} % paso linea
+        \textit{
+            Pregunta resuelta a partir de la diapositiva 104 del tema 2:
+            Autómatas Finitos y Expresiones Regulares de MC.
+            Las expresiones regulares generadas en cada apartado se
+            simulan en JFlag
+        }
+
+        \newpage
+
+        % 
+        % Ejercicio 4
+        %
+
+        \section*{Ejercicio 4}
+        \begin{enumerate}
+            \item ¿Es $L = \{ U \in \{0, 1\}^* /\  u=u^{-1} \}$. regular? 
+            \item Encontrar un modelo de calculo para $L$ 
+        \end{enumerate}
+
+        \textit{
+            Suponemos que el lenguaje L es regular.
+            Entonces satisface el Lema de Bombeo.
+            Existe una gramática libre de contexto ya que L(G)=L
+            Si es libre de contexto, se crea un autómata con pilas
+            crear el automata con pilas y simularlo en JFLAP
+        }
+
+    \end{document}

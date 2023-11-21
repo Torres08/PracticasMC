@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.16)  30 OCT 2023 19:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.16)  21 NOV 2023 15:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex
-(/home/torres/Documents/Github/PracticasMC/Latex/Practicas.tex
+**/home/torres/Documents/Github/PracticasMC/Practicas/Practicas.tex
+(/home/torres/Documents/Github/PracticasMC/Practicas/Practicas.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -195,137 +195,137 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./Imagenes/produccion1.png, id=24, 350.30875pt x 201.75375pt>
 File: ./Imagenes/produccion1.png Graphic file (type png)
 <use ./Imagenes/produccion1.png>
-Package pdftex.def Info: ./Imagenes/produccion1.png  used on input line 100.
+Package pdftex.def Info: ./Imagenes/produccion1.png  used on input line 98.
 (pdftex.def)             Requested size: 155.24895pt x 89.41533pt.
 <./Imagenes/grafoaaabb.png, id=25, 285.065pt x 112.42pt>
 File: ./Imagenes/grafoaaabb.png Graphic file (type png)
 <use ./Imagenes/grafoaaabb.png>
-Package pdftex.def Info: ./Imagenes/grafoaaabb.png  used on input line 107.
+Package pdftex.def Info: ./Imagenes/grafoaaabb.png  used on input line 105.
 (pdftex.def)             Requested size: 155.24895pt x 61.22394pt.
 <./Imagenes/grafoaabbb.png, id=26, 587.19376pt x 583.17876pt>
 File: ./Imagenes/grafoaabbb.png Graphic file (type png)
 <use ./Imagenes/grafoaabbb.png>
-Package pdftex.def Info: ./Imagenes/grafoaabbb.png  used on input line 115.
+Package pdftex.def Info: ./Imagenes/grafoaabbb.png  used on input line 113.
 (pdftex.def)             Requested size: 155.24895pt x 154.18568pt.
 <./Imagenes/grafoaabb.png, id=27, 590.205pt x 583.17876pt>
 File: ./Imagenes/grafoaabb.png Graphic file (type png)
 <use ./Imagenes/grafoaabb.png>
-Package pdftex.def Info: ./Imagenes/grafoaabb.png  used on input line 122.
+Package pdftex.def Info: ./Imagenes/grafoaabb.png  used on input line 120.
 (pdftex.def)             Requested size: 155.24895pt x 153.3937pt.
  [2 <./Imagenes/produccion1.png> <./Imagenes/grafoaaabb.png> <./Imagenes/grafoaabbb.png> <./Imagenes/grafoaabb.png>]
 <./Imagenes/produccion2.png, id=36, 283.0575pt x 212.795pt>
 File: ./Imagenes/produccion2.png Graphic file (type png)
 <use ./Imagenes/produccion2.png>
-Package pdftex.def Info: ./Imagenes/produccion2.png  used on input line 166.
+Package pdftex.def Info: ./Imagenes/produccion2.png  used on input line 164.
 (pdftex.def)             Requested size: 155.24895pt x 116.7129pt.
 <./Imagenes/grafo3.png, id=37, 273.02pt x 84.315pt>
 File: ./Imagenes/grafo3.png Graphic file (type png)
 <use ./Imagenes/grafo3.png>
-Package pdftex.def Info: ./Imagenes/grafo3.png  used on input line 173.
+Package pdftex.def Info: ./Imagenes/grafo3.png  used on input line 171.
 (pdftex.def)             Requested size: 155.24895pt x 47.94424pt.
 <./Imagenes/grafo1.png, id=38, 655.44875pt x 603.25375pt>
 File: ./Imagenes/grafo1.png Graphic file (type png)
 <use ./Imagenes/grafo1.png>
-Package pdftex.def Info: ./Imagenes/grafo1.png  used on input line 181.
+Package pdftex.def Info: ./Imagenes/grafo1.png  used on input line 179.
 (pdftex.def)             Requested size: 155.24895pt x 142.88765pt.
 <./Imagenes/grafo2.png, id=39, 649.42625pt x 601.24625pt>
 File: ./Imagenes/grafo2.png Graphic file (type png)
 <use ./Imagenes/grafo2.png>
-Package pdftex.def Info: ./Imagenes/grafo2.png  used on input line 188.
+Package pdftex.def Info: ./Imagenes/grafo2.png  used on input line 186.
 (pdftex.def)             Requested size: 155.24895pt x 143.72406pt.
  [3 <./Imagenes/produccion2.png> <./Imagenes/grafo3.png> <./Imagenes/grafo1.png> <./Imagenes/grafo2.png>]
 <./Imagenes/produccion3.png, id=43, 291.0875pt x 175.65625pt>
 File: ./Imagenes/produccion3.png Graphic file (type png)
 <use ./Imagenes/produccion3.png>
-Package pdftex.def Info: ./Imagenes/produccion3.png  used on input line 224.
+Package pdftex.def Info: ./Imagenes/produccion3.png  used on input line 222.
 (pdftex.def)             Requested size: 155.24895pt x 93.68703pt.
 <./Imagenes/grafo6.png, id=44, 237.88875pt x 76.285pt>
 File: ./Imagenes/grafo6.png Graphic file (type png)
 <use ./Imagenes/grafo6.png>
-Package pdftex.def Info: ./Imagenes/grafo6.png  used on input line 231.
+Package pdftex.def Info: ./Imagenes/grafo6.png  used on input line 229.
 (pdftex.def)             Requested size: 155.24895pt x 49.78719pt.
 <./Imagenes/grado4.png, id=45, 648.4225pt x 595.22375pt>
 File: ./Imagenes/grado4.png Graphic file (type png)
 <use ./Imagenes/grado4.png>
-Package pdftex.def Info: ./Imagenes/grado4.png  used on input line 239.
+Package pdftex.def Info: ./Imagenes/grado4.png  used on input line 237.
 (pdftex.def)             Requested size: 155.24895pt x 142.51149pt.
 <./Imagenes/grafo5.png, id=46, 651.43375pt x 595.22375pt>
 File: ./Imagenes/grafo5.png Graphic file (type png)
 <use ./Imagenes/grafo5.png>
-Package pdftex.def Info: ./Imagenes/grafo5.png  used on input line 246.
+Package pdftex.def Info: ./Imagenes/grafo5.png  used on input line 244.
 (pdftex.def)             Requested size: 155.24895pt x 141.84846pt.
  [4 <./Imagenes/produccion3.png> <./Imagenes/grafo6.png> <./Imagenes/grado4.png> <./Imagenes/grafo5.png>]
 <./Imagenes/produccion4.png, id=50, 284.06125pt x 293.095pt>
 File: ./Imagenes/produccion4.png Graphic file (type png)
 <use ./Imagenes/produccion4.png>
-Package pdftex.def Info: ./Imagenes/produccion4.png  used on input line 284.
+Package pdftex.def Info: ./Imagenes/produccion4.png  used on input line 282.
 (pdftex.def)             Requested size: 86.25pt x 88.99356pt.
 <./Imagenes/grafoabab.png, id=51, 269.005pt x 95.35625pt>
 File: ./Imagenes/grafoabab.png Graphic file (type png)
 <use ./Imagenes/grafoabab.png>
-Package pdftex.def Info: ./Imagenes/grafoabab.png  used on input line 291.
+Package pdftex.def Info: ./Imagenes/grafoabab.png  used on input line 289.
 (pdftex.def)             Requested size: 137.9979pt x 48.91766pt.
 <./Imagenes/grafo7.png, id=52, 647.41875pt x 608.2725pt>
 File: ./Imagenes/grafo7.png Graphic file (type png)
 <use ./Imagenes/grafo7.png>
-Package pdftex.def Info: ./Imagenes/grafo7.png  used on input line 299.
+Package pdftex.def Info: ./Imagenes/grafo7.png  used on input line 297.
 (pdftex.def)             Requested size: 137.9979pt x 129.65297pt.
 <./Imagenes/grafobbbaaa.png, id=53, 649.42625pt x 613.29124pt>
 File: ./Imagenes/grafobbbaaa.png Graphic file (type png)
 <use ./Imagenes/grafobbbaaa.png>
-Package pdftex.def Info: ./Imagenes/grafobbbaaa.png  used on input line 306.
+Package pdftex.def Info: ./Imagenes/grafobbbaaa.png  used on input line 304.
 (pdftex.def)             Requested size: 137.9979pt x 130.31096pt.
  [5 <./Imagenes/produccion4.png> <./Imagenes/grafoabab.png> <./Imagenes/grafo7.png> <./Imagenes/grafobbbaaa.png>]
 <./Imagenes/produccion5.png, id=57, 283.0575pt x 142.5325pt>
 File: ./Imagenes/produccion5.png Graphic file (type png)
 <use ./Imagenes/produccion5.png>
-Package pdftex.def Info: ./Imagenes/produccion5.png  used on input line 340.
+Package pdftex.def Info: ./Imagenes/produccion5.png  used on input line 338.
 (pdftex.def)             Requested size: 155.24895pt x 78.17561pt.
 <./Imagenes/grafo8.png, id=58, 227.85126pt x 52.195pt>
 File: ./Imagenes/grafo8.png Graphic file (type png)
 <use ./Imagenes/grafo8.png>
-Package pdftex.def Info: ./Imagenes/grafo8.png  used on input line 347.
+Package pdftex.def Info: ./Imagenes/grafo8.png  used on input line 345.
 (pdftex.def)             Requested size: 155.24895pt x 35.56459pt.
 <./Imagenes/grafo9.png, id=59, 648.4225pt x 576.1525pt>
 File: ./Imagenes/grafo9.png Graphic file (type png)
 <use ./Imagenes/grafo9.png>
-Package pdftex.def Info: ./Imagenes/grafo9.png  used on input line 355.
+Package pdftex.def Info: ./Imagenes/grafo9.png  used on input line 353.
 (pdftex.def)             Requested size: 155.24895pt x 137.94534pt.
 <./Imagenes/grafo10.png, id=60, 648.4225pt x 589.20125pt>
 File: ./Imagenes/grafo10.png Graphic file (type png)
 <use ./Imagenes/grafo10.png>
-Package pdftex.def Info: ./Imagenes/grafo10.png  used on input line 362.
+Package pdftex.def Info: ./Imagenes/grafo10.png  used on input line 360.
 (pdftex.def)             Requested size: 155.24895pt x 141.06955pt.
  [6 <./Imagenes/produccion5.png> <./Imagenes/grafo8.png> <./Imagenes/grafo9.png> <./Imagenes/grafo10.png>]
 <./Imagenes/produccion6.png, id=67, 288.07625pt x 174.6525pt>
 File: ./Imagenes/produccion6.png Graphic file (type png)
 <use ./Imagenes/produccion6.png>
-Package pdftex.def Info: ./Imagenes/produccion6.png  used on input line 397.
+Package pdftex.def Info: ./Imagenes/produccion6.png  used on input line 395.
 (pdftex.def)             Requested size: 155.24895pt x 94.12706pt.
 <./Imagenes/grado11.png, id=68, 238.8925pt x 71.26625pt>
 File: ./Imagenes/grado11.png Graphic file (type png)
 <use ./Imagenes/grado11.png>
-Package pdftex.def Info: ./Imagenes/grado11.png  used on input line 404.
+Package pdftex.def Info: ./Imagenes/grado11.png  used on input line 402.
 (pdftex.def)             Requested size: 155.24895pt x 46.3138pt.
 <./Imagenes/grafo12.png, id=69, 646.415pt x 597.23125pt>
 File: ./Imagenes/grafo12.png Graphic file (type png)
 <use ./Imagenes/grafo12.png>
-Package pdftex.def Info: ./Imagenes/grafo12.png  used on input line 412.
+Package pdftex.def Info: ./Imagenes/grafo12.png  used on input line 410.
 (pdftex.def)             Requested size: 155.24895pt x 143.42955pt.
 <./Imagenes/grafo13.png, id=70, 646.415pt x 592.2125pt>
 File: ./Imagenes/grafo13.png Graphic file (type png)
 <use ./Imagenes/grafo13.png>
-Package pdftex.def Info: ./Imagenes/grafo13.png  used on input line 419.
+Package pdftex.def Info: ./Imagenes/grafo13.png  used on input line 417.
 (pdftex.def)             Requested size: 155.24895pt x 142.22426pt.
  [7 <./Imagenes/produccion6.png> <./Imagenes/grado11.png> <./Imagenes/grafo12.png> <./Imagenes/grafo13.png>] [8] [9] (./Practicas.aux) ) 
 Here is how much of TeX's memory you used:
  4248 strings out of 478051
- 71077 string characters out of 5840942
+ 71089 string characters out of 5840942
  1857330 words of memory out of 5000000
  24334 multiletter control sequences out of 15000+600000
  523327 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 67i,9n,77p,390b,679s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,9n,77p,394b,679s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/torres/.texlive2022/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 Output written on Practicas.pdf (10 pages, 466989 bytes).
 PDF statistics:
