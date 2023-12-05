@@ -1,7 +1,32 @@
 
-
 \documentclass{article}
-\usepackage{amsmath, amssymb, graphicx, subcaption}  % For \mathbb command
+\usepackage{amsmath, amssymb, graphicx, subcaption, listings,xcolor}  % For \mathbb command
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
 
 
     \title{Practicas MC}
@@ -458,13 +483,47 @@
 
         \newpage
 
-        \subsection*{Problema}
-
-        Validación de Direcciones IP: Queremos encontrar direcciones IP en un texto. Las direcciones IP pueden estar en formato IPv4 
-        (por ejemplo, 192.168.0.1) o IPv6 (por ejemplo, 2001:0db8:85a3:0000:0000:8a2e:0370:7334). 
-        Debes crear una expresión regular que identifique y valide tanto direcciones IPv4 como IPv6 en el texto.
-
+        \subsection*{1. Descripcion del Problema}
         
+        En la definición de este problema, he buscado un enfoque tanto practico como original. Desde el punto de vista de un profesor, podemos establecer, a la hora de evaluar código, una relación directa entre la cantidad/densidad de comentarios presentes en un  código fuente y la comprensión del mismo por parte del alumno, por lo que evidencia que le ha dado un mayor esfuerzo y se le podria valorar positivamente. Tambien, por otro lado es más facil evaluar el codigo sin esos comentarios, por lo que vendira bien tener una version  del código sin comentarios.Por lo tanto, el problema que se plantea es el siguiente:
+    
+        \subsubsection*{Densidad de comentarios y limpieza de comentarios en Codigo Fuente
+        }
+        Tu tarea es desarrollar un programa en Lex que calcule la densidad de comentarios en un código fuente en C. La densidad de comentarios se define como el porcentaje del código total que está ocupado por comentarios. Además, tu programa deberá ser capaz de generar una nueva versión del código eliminando todos los comentarios.
+
+
+        \subsubsection*{Ejemplo}
+        El alumno ha entregado su ejercicio de C correspondiente de la asignatura, voy a calcular la densidad de comentarios con la siguiente formula: 
+        \[ \text{{Densidad de comentarios}} = \frac{{\text{{Longitud total de los comentarios}}}}{{\text{{Longitud total del código (sin contar los comentarios)}}}} \]
+        \vspace{\baselineskip} % paso linea
+        ademas voy a generar el mismo codigo pero sin texto para evaluarlo aparte.
+        un ejemplo tanto de entrada como de salida será el siguiente
+        
+        \newpage
+
+    
+        \lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+        \begin{lstlisting}[frame=single]
+    #include <stdio.h>
+    #include <stdlib.h>
+            
+    // funcion de ejemplo
+    void imprimirMensaje() {
+        printf("! Hola, mundo!\n");
+    }
+
+    /*
+        comentarios
+        multilinea
+    */
+
+    int main{
+        // Llamada a la funcion
+        imprimirMensaje();
+        return 0;
+    }
+    \end{lstlisting}
+
 
 
     \end{document}
