@@ -485,25 +485,42 @@
 
         \subsection*{1. Descripcion del Problema}
         
-        En la definición de este problema, he buscado un enfoque tanto practico como original. Desde el punto de vista de un profesor, podemos establecer, a la hora de evaluar código, una relación directa entre la cantidad/densidad de comentarios presentes en un  código fuente y la comprensión del mismo por parte del alumno, por lo que evidencia que le ha dado un mayor esfuerzo y se le podria valorar positivamente. Tambien, por otro lado es más facil evaluar el codigo sin esos comentarios, por lo que vendira bien tener una version  del código sin comentarios.Por lo tanto, el problema que se plantea es el siguiente:
+        Soy un nuevo profesor de la asignatura de Fundamentos de Programacion. Tras corregir varios ejercicios de los alumnos me he dado cuenta que la cantidad de comentarios explicando 
+        el codigo va relacionada con la nota del ejercicio. Por lo que he decidido crear un programa que calcule la densidad de comentarios en un codigo fuente en C para evaluar positivamente a los alumnos que comenten su codigo.
     
-        \subsubsection*{Densidad de comentarios y limpieza de comentarios en Codigo Fuente
-        }
-        Tu tarea es desarrollar un programa en Lex que calcule la densidad de comentarios en un código fuente en C. La densidad de comentarios se define como el porcentaje del código total que está ocupado por comentarios. Además, tu programa deberá ser capaz de generar una nueva versión del código eliminando todos los comentarios.
-
+        \subsubsection*{Densidad de comentarios codigo}
+        Tu tarea es desarrollar un programa en Lex que calcule la densidad de comentarios en un código fuente en C. 
+        La densidad de comentarios se define como el porcentaje del código total que está ocupado por comentarios. 
 
         \subsubsection*{Ejemplo}
         El alumno ha entregado su ejercicio de C correspondiente de la asignatura, voy a calcular la densidad de comentarios con la siguiente formula: 
-        \[ \text{{Densidad de comentarios}} = \frac{{\text{{Longitud total de los comentarios}}}}{{\text{{Longitud total del código (sin contar los comentarios)}}}} \]
-        \vspace{\baselineskip} % paso linea
-        ademas voy a generar el mismo codigo pero sin texto para evaluarlo aparte.
-        un ejemplo tanto de entrada como de salida será el siguiente
+        \[ \text{{Densidad de comentarios}} = \frac{{\text{{Total de letras en un comentario}}}}{{\text{{Total de letras de un comentario}}}} \]
+        para resolver el problema tendre que reconocer los comentarios. En C se usa "/* */" y "//", luego calcular el total de letras de un comentario y el total de letras en el codigo, por ultimo usaremos la funcion anterior
         
+        \begin{enumerate}
+            \item Creo 2 variables globales, para contar letras en el código y en comentarios.
+            \item Defino 2 estados \texttt{INCOMMENTBLOCK} y \texttt{INCOMMENTLINE} para manejar por separado los dos tipos de comentarios en C: comentarios en línea y comentarios en bloque.
+            \item Defino una función \texttt{contarLetras} que cuenta únicamente letras; no cuenta espacios en blanco, tabuladores, saltos de línea ni retornos de carro.
+            \item Defino reglas de Flex para reconocer los comentarios:
+                \begin{itemize}
+                    \item Si encuentra ``/*'', comienza el subestado \texttt{INCOMMENTBLOCK} y termina con ``*/''.
+                    \item Si encuentra ``//'', comienza el subestado \texttt{INCOMMENTLINE} y termina con un salto de línea.
+                    \item Dentro del estado \texttt{INCOMMENTBLOCK}, para cualquier carácter que no sea un asterisco (para evitar contar el fin del comentario \texttt{*/}) ni un salto de línea (\texttt{\textbackslash n}). Para comentarios en línea, solo no cuento el salto de línea.
+                    \item El texto seleccionado corresponde a la variable \texttt{yytext}, la cual introduzco en mi función \texttt{contarLetras}.
+                    \item Imprimo cada comentario encontrado, indicando su tipo y su longitud.
+                    \item Para referirme a todo el código, uso \texttt{.|\textbackslash n}, haciendo referencia a cualquier carácter y un salto de línea.
+
+                \end{itemize}
+            \item Por último, calculo la densidad de comentarios con la fórmula anterior.
+        \end{enumerate}
+
         \newpage
 
     
+        Entrada
         \lstset{language=C, breaklines=true, basicstyle=\footnotesize}
         \begin{lstlisting}[frame=single]
+    
     #include <stdio.h>
     #include <stdlib.h>
             
@@ -522,7 +539,25 @@
         imprimirMensaje();
         return 0;
     }
-    \end{lstlisting}
+        \end{lstlisting}
+
+        
+
+
+
+
+    \newpage
+
+    
+    %
+    % PRACTICA 3
+    \section*{Practica 3}
+    máquinas de estados para codificar y decodificar código Enigma.
+    Usando las máquinas de estado finito, en concreto la de Mealy,
+    hay que implementar un código para con codificador y después
+    se decodifica.
+    El codificador y el decodificador, se simula en JFlag como una
+    máquina de Mealy
 
 
 
