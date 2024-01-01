@@ -492,10 +492,9 @@
         Tu tarea es desarrollar un programa en Lex que calcule la densidad de comentarios en un código fuente en C. 
         La densidad de comentarios se define como el porcentaje del código total que está ocupado por comentarios. 
 
-        \subsubsection*{Ejemplo}
+        \subsubsection*{Pasos}
         El alumno ha entregado su ejercicio de C correspondiente de la asignatura, voy a calcular la densidad de comentarios con la siguiente formula: 
-        \[ \text{{Densidad de comentarios}} = \frac{{\text{{Total de letras en un comentario}}}}{{\text{{Total de letras de un comentario}}}} \]
-        para resolver el problema tendre que reconocer los comentarios. En C se usa "/* */" y "//", luego calcular el total de letras de un comentario y el total de letras en el codigo, por ultimo usaremos la funcion anterior
+        \[ \text{{Densidad de comentarios}} = \frac{{\text{{Total de letras en un comentario}}}}{{\text{{Total de letras en el codigo}}}} \]
         
         \begin{enumerate}
             \item Creo 2 variables globales, para contar letras en el código y en comentarios.
@@ -505,25 +504,31 @@
                 \begin{itemize}
                     \item Si encuentra ``/*'', comienza el subestado \texttt{INCOMMENTBLOCK} y termina con ``*/''.
                     \item Si encuentra ``//'', comienza el subestado \texttt{INCOMMENTLINE} y termina con un salto de línea.
-                    \item Dentro del estado \texttt{INCOMMENTBLOCK}, para cualquier carácter que no sea un asterisco (para evitar contar el fin del comentario \texttt{*/}) ni un salto de línea (\texttt{\textbackslash n}). Para comentarios en línea, solo no cuento el salto de línea.
+                    \item Dentro del estado \texttt{INCOMMENTBLOCK}, selecciono para cualquier carácter que no sea un asterisco (para evitar contar el fin del comentario \texttt{*/}) ni un salto de línea. Para comentarios en línea, solo no cuento el salto de línea.
                     \item El texto seleccionado corresponde a la variable \texttt{yytext}, la cual introduzco en mi función \texttt{contarLetras}.
-                    \item Imprimo cada comentario encontrado, indicando su tipo y su longitud.
+                    \item Imprimo cada comentario encontrado haciendo print a yytext, tambien indico tipo comentario y su longitud
                     \item Para referirme a todo el código, uso \texttt{.|\textbackslash n}, haciendo referencia a cualquier carácter y un salto de línea.
 
                 \end{itemize}
             \item Por último, calculo la densidad de comentarios con la fórmula anterior.
         \end{enumerate}
 
-        \newpage
+        \vspace{\baselineskip} % paso linea
 
+
+        Para ejecutar el programa usaremos un Makefile 
+    \begin{lstlisting}[frame=single, caption={Ejemplo de ejecución}, captionpos=b]
+$ make all 
+$ make run 
+\end{lstlisting}
+
+            \vspace{\baselineskip} % paso linea
     
-        Entrada
         \lstset{language=C, breaklines=true, basicstyle=\footnotesize}
-        \begin{lstlisting}[frame=single]
-    
+        \begin{lstlisting}[frame=single, caption={Ejemplo de Entrada}]        
     #include <stdio.h>
     #include <stdlib.h>
-            
+                
     // funcion de ejemplo
     void imprimirMensaje() {
         printf("! Hola, mundo!\n");
@@ -540,25 +545,149 @@
         return 0;
     }
         \end{lstlisting}
+       
+        \newpage
 
-        
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[width=0.8\textwidth]{./Imagenes/salida1.png}
+            \caption{Resultado de la ejecución del programa}
+        \end{figure}
 
+        \subsubsection*{Analisis Resultado}
+     Podemos ver que el programa ha detectado los comentarios y diferenciado si es un comentario en linea o 
+     un comentario en bloque. Calcula correctamente tanto las letras de cada comentario como el total de letras en el codigo y por
+     ultimo calcula el porcentaje de comentarios en el codigo  correspondiente.
+     Ahora el maestro, viendo el porcetaje de comentarios de cada ejercicio de FP, puede evaluar positivamente a los alumnos que comenten su codigo correctamente.
+     Tampoco se puede abusar de los comentarios, ya que el maestro puede ver el porcentaje de comentarios y si es demasiado alto puede penalizar al alumno.
 
 
 
     \newpage
-
+    \lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+        \begin{lstlisting}[frame=single, caption={Codigo Analizador Lex}]        
+    %{
+    #include <stdio.h>
+    #include <stdlib.h>
+                
+    int total_letters = 0;
+    int comment_letters = 0;  
+    int comment_letters_global = 0;         
+    int contarLetras(const char* texto);         
+    %}
+                
+    %x INCOMMENTBLOCK INCOMMENTLINE
+                
+    %%       
+    "/*" {
+        BEGIN(INCOMMENTBLOCK);
+        printf("\nComentario en bloque: ");
+        comment_letters = 0;
+    }
+                
+    <INCOMMENTBLOCK>"*/" {
+        BEGIN(INITIAL);
+        printf("\nNumero de letras en comentario en bloque: %d\n", comment_letters);
+        comment_letters = 0;
+    }
+                
+    <INCOMMENTBLOCK>[^*\n]+ {
+        int letras_comentario = contarLetras(yytext);
+        printf("%s", yytext);
+        comment_letters += letras_comentario;
+        comment_letters_global += letras_comentario;
+    }
+                         
+    <INCOMMENTBLOCK>\n {
+        // No contar el salto de linea
+    }
+                
+    "//" {
+        BEGIN(INCOMMENTLINE);
+        printf("\nComentario en linea: ");
+    }
+                
+    <INCOMMENTLINE>\n {
+        BEGIN(INITIAL);
+        printf("\nNumero de letras en comentario en linea: %d\n", comment_letters);
+        comment_letters = 0;
+    }
+                
+    <INCOMMENTLINE>[^\n]+ {
+        printf("%s", yytext);
+        comment_letters += contarLetras(yytext);
+        comment_letters_global += contarLetras(yytext);
+    }
+                
+    .|\n {
+        total_letters += contarLetras(yytext);
+    }         
+    %%     
+    // sin salto de linea al final, solo cuento letras simbolos y numeros
+    int contarLetras(const char* texto) {
+        int contador = 0;
+        while (*texto) {
+            if (*texto != '\n' && *texto != '\t' && *texto != ' ' && *texto != '\r') {
+                contador++;
+                }
+                texto++;
+            }
+        return contador;
+    }       
+    // conslato de linea
+    int main(int argc, char* argv[]) {
+        printf("DEBUG:\n");
+        yylex();
+                    
+        printf("RESULTADO:\n");
+        printf("\nNumero total de letras en codigo: %d\n", total_letters);
+        printf("Numero total de letras en comentarios: %d\n", comment_letters_global );
+        printf("Porcentaje de Comentarios: %.2f \%\n\n", (float)(comment_letters_global) / total_letters * 100);   
+        return EXIT_SUCCESS;
+    }
+        \end{lstlisting}
     
+        \lstset{language=bash, breaklines=true, basicstyle=\footnotesize}
+        \begin{lstlisting}[frame=single, caption={Makefile}]        
+    all: comentador
+
+    comentador: lex.yy.c
+        gcc -o comentador lex.yy.c -lfl
+            
+    lex.yy.c: comentador.l
+        flex comentador.l
+            
+    run: comentador
+        ./comentador < ./ejemplos/ejemplo1.c
+        ./comentador < ./ejemplos/ejemplo2.c
+        \end{lstlisting}
+
+    \newpage
+
     %
     % PRACTICA 3
     \section*{Practica 3}
-    máquinas de estados para codificar y decodificar código Enigma.
-    Usando las máquinas de estado finito, en concreto la de Mealy,
-    hay que implementar un código para con codificador y después
-    se decodifica.
-    El codificador y el decodificador, se simula en JFlag como una
-    máquina de Mealy
+    Diseña una máquinas de estados finitos, en particular la máquina de Mealy, para simular la codificación y decodificación del código Enigma. Implementa un conjunto de estados y transiciones que reflejen el proceso de cifrado y descifrado característico del Enigma. Utiliza JFLAP para simular y visualizar la máquina de Mealy que actúa como codificador y decodificador.
+
+    El codigo enigma es una maquina de cifrado mecánica utilizada durante la 2º guerra mundial.
+    Funciona mediante rotores giratorios que cifran las letras del alfabeto 
+
+    Funcionamient
+    \begin{enumerate}
+        \item Los rotores tenian una posicion inicial 
+        \item Cuando se presiona una tecla, la corriente pasa por los rotores y cifra la letra con la correspondiente con el rotor
+        \item El rotor (o rotores) gira despues de cifrar una letra 
+        \item la corriente electrica, que tiene la letra, pasa por un reflector, que refleja la señal de vuelta a traves de los rotores
+        \item al volver a pasar por los rotores se vuelve a cifrar
+        \item se obtiene el codigo 
+    \end{enumerate}
 
 
+    Pasos a seguir crear maquina de Mealy
+    \begin{enumerate}
+     \item Definir los Estados de la maquina de Mealy: Inicio, rotor, 
+     \item Definir alfabeto de entrada {A,E,I,O,U}
+     \item Diseñar las transicciones entre estados (movimiento rotores, configuracion rotores)
+    \end{enumerate}    
 
     \end{document}

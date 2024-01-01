@@ -6,6 +6,6 @@ comentador: lex.yy.c
 lex.yy.c: comentador.l
 	flex comentador.l
 
-prueba: comentador
+run: comentador
 	./comentador < ./ejemplos/ejemplo1.c
 	./comentador < ./ejemplos/ejemplo2.c
