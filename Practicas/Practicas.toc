@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Practica 1}{2}{}%
+\contentsline {subsection}{\numberline {1.1}$L = \{a^i b^j \, | \, i, j \in \mathbb {N}, \, i \leq j\}$.}{3}{}%
+\contentsline {subsection}{\numberline {1.2}$L = \{a^i b^j a^j b^i \, | \, i, j \in \mathbb {N}\}$.}{4}{}%
+\contentsline {subsection}{\numberline {1.3}$L = \{a^i b^i a^j b^j \, | \, i, j \in \mathbb {N}\}$.}{5}{}%
+\contentsline {subsection}{\numberline {1.4}$L = \{a_i b_i \,|\, i \in \mathbb {N}\} \cup \{b_i a_i \,|\, i \in \mathbb {N\}}$.}{6}{}%
+\contentsline {subsection}{\numberline {1.5}$L = \{uu^{-1} \mid u \in \{a, b\}^*\}$.}{7}{}%
+\contentsline {subsection}{\numberline {1.6}$L = \{a^i b^j c^{i+j} \, | \, i, j \in \mathbb {N}\}$.}{8}{}%
+\contentsline {section}{\numberline {2}Practica 2}{9}{}%
+\contentsline {subsection}{\numberline {2.1}Tareas a realizar}{9}{}%
+\contentsline {subsection}{\numberline {2.2}Descripcion del Problema}{10}{}%
+\contentsline {subsection}{\numberline {2.3}Densidad de comentarios codigo}{10}{}%
+\contentsline {subsection}{\numberline {2.4}Pasos}{10}{}%
+\contentsline {section}{\numberline {3}Practica 3}{16}{}%
+\contentsline {subsection}{\numberline {3.1}Maquina Enigma}{16}{}%
+\contentsline {subsection}{\numberline {3.2}Reglas}{17}{}%
+\contentsline {subsection}{\numberline {3.3}Codificador}{18}{}%
+\contentsline {subsection}{\numberline {3.4}Decodificador}{19}{}%

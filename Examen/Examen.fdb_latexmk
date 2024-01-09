@@ -1,7 +1,13 @@
 # Fdb version 4
-["pdflatex"] 1704811867 "/home/torres/Documents/Github/PracticasMC/Examen/Examen.tex" "Examen.pdf" "Examen" 1704811869 0
+["makeindex Examen.idx"] 1704822676 "Examen.idx" "Examen.ind" "Examen" 1704822907 0
+  "Examen.idx" 1704822906 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  (generated)
+  "Examen.ilg"
+  "Examen.ind"
+  (rewritten before read)
+["pdflatex"] 1704822905 "/home/torres/Documents/Github/PracticasMC/Examen/Examen.tex" "Examen.pdf" "Examen" 1704822907 0
   "/etc/texmf/web2c/texmf.cnf" 1697468406 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/torres/Documents/Github/PracticasMC/Examen/Examen.tex" 1704811865 19127 968c6f503b91a6ff67672d00c4c61be4 ""
+  "/home/torres/Documents/Github/PracticasMC/Examen/Examen.tex" 1704822903 19272 6eb7c5298c1b75d2ca72c9133f0db856 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -49,6 +55,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty" 1654720880 4474 f04cd1cc7bd76eb033e6fb12eb6a0d77 ""
   "/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty" 1654720880 2444 70065bddd85997dc1fd0bb7ae634e5fa ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1667332637 20144 d5ecf0a5140c8d8d8b72cbe86e320eff ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty" 1654720880 1939 6ddbd9091294c45e7eac2e9cff8994ff ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1667332637 8448 c33a4e1cb35cee9b33c2b21033b73e39 ""
   "/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty" 1647548653 54291 b8e5c600d4aa37b48a740dd2a6c26163 ""
   "/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty" 1647548653 71241 d2cd3a1c5acef9cb31f945b93c0bb6e3 ""
@@ -66,10 +73,12 @@
   "/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty" 1654720880 7147 be6981d9f5d866a5634048c4a11814a9 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1697468412 125915 807ff72f6023b33a59c427bfd156a3d1 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1704816770 127890 5ab1bc37a8512de966584d169b1a2dac ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1697468428 6475481 5e0faf0df09b541759db8328f50c952a ""
-  "Examen.aux" 1704811868 2475 5494a050a10722c01e9aa9407cda8fb3 "pdflatex"
-  "Examen.tex" 1704811865 19127 968c6f503b91a6ff67672d00c4c61be4 ""
+  "Examen.aux" 1704822907 2875 95ab142e639505df52e37e44bd0093d9 "pdflatex"
+  "Examen.ind" 1704822676 0 d41d8cd98f00b204e9800998ecf8427e "makeindex Examen.idx"
+  "Examen.tex" 1704822903 19272 6eb7c5298c1b75d2ca72c9133f0db856 ""
+  "Examen.toc" 1704822907 233 aa10497c814d464a01772c69cac4356a "pdflatex"
   "Imagenes/image1.png" 1704129862 2515 e9a722f73698869263949d365be87b8b ""
   "Imagenes/image10.png" 1704132295 4111 c0afb1a463c7057c3666ddb307c10113 ""
   "Imagenes/image11.png" 1704133080 61423 14b033d2cb46d78d1f6019f212e5a6f3 ""
@@ -103,6 +112,8 @@
   "Imagenes/logo_universidad_de_granada.png" 1700578548 53791 74a07ec3c3526907c0b619752524bf5d ""
   (generated)
   "Examen.aux"
+  "Examen.idx"
   "Examen.log"
   "Examen.pdf"
+  "Examen.toc"
   (rewritten before read)

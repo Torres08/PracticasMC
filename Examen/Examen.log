@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.16)  9 JAN 2024 15:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.16)  9 JAN 2024 18:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -153,7 +153,15 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \TX@delta=\dimen166
 \TX@cols=\count275
 \TX@ftn=\toks23
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+\@indexfile=\write3
+\openout3 = `Examen.idx'.
+
+
+Writing index file Examen.idx
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count276
 \l__pdf_internal_box=\box55
@@ -257,20 +265,20 @@ LaTeX Warning: Label `fig:label4' multiply defined.
 )
 \openout1 = `Examen.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count277
@@ -295,258 +303,262 @@ Package caption Info: End \AtBeginDocument code.
 <./Imagenes/logo_universidad_de_granada.png, id=1, 1284.8pt x 408.52625pt>
 File: ./Imagenes/logo_universidad_de_granada.png Graphic file (type png)
 <use ./Imagenes/logo_universidad_de_granada.png>
-Package pdftex.def Info: ./Imagenes/logo_universidad_de_granada.png  used on input line 22.
+Package pdftex.def Info: ./Imagenes/logo_universidad_de_granada.png  used on input line 25.
 (pdftex.def)             Requested size: 345.0pt x 109.6989pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Imagenes/logo_universidad_de_granada.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Imagenes/logo_universidad_de_granada.png>] (./Examen.toc)
+\tf@toc=\write4
+\openout4 = `Examen.toc'.
+
+ [1]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (15.0pt too wide) in paragraph at lines 80--81
+Overfull \hbox (15.0pt too wide) in paragraph at lines 86--87
 [][] 
  []
 
-[1]
-<./Imagenes/image1.png, id=22, 217.81375pt x 263.98625pt>
+[2]
+<./Imagenes/image1.png, id=25, 217.81375pt x 263.98625pt>
 File: ./Imagenes/image1.png Graphic file (type png)
 <use ./Imagenes/image1.png>
-Package pdftex.def Info: ./Imagenes/image1.png  used on input line 91.
+Package pdftex.def Info: ./Imagenes/image1.png  used on input line 97.
 (pdftex.def)             Requested size: 120.7521pt x 146.34894pt.
-<./Imagenes/image2.png, id=23, 410.53375pt x 113.42375pt>
+<./Imagenes/image2.png, id=26, 410.53375pt x 113.42375pt>
 File: ./Imagenes/image2.png Graphic file (type png)
 <use ./Imagenes/image2.png>
-Package pdftex.def Info: ./Imagenes/image2.png  used on input line 98.
+Package pdftex.def Info: ./Imagenes/image2.png  used on input line 104.
 (pdftex.def)             Requested size: 189.75105pt x 52.42477pt.
-<./Imagenes/image3.png, id=24, 307.1475pt x 138.5175pt>
+<./Imagenes/image3.png, id=27, 307.1475pt x 138.5175pt>
 File: ./Imagenes/image3.png Graphic file (type png)
 <use ./Imagenes/image3.png>
-Package pdftex.def Info: ./Imagenes/image3.png  used on input line 106.
+Package pdftex.def Info: ./Imagenes/image3.png  used on input line 112.
 (pdftex.def)             Requested size: 120.7521pt x 54.457pt.
-<./Imagenes/image4.png, id=25, 1297.84875pt x 620.3175pt>
+<./Imagenes/image4.png, id=28, 1297.84875pt x 620.3175pt>
 File: ./Imagenes/image4.png Graphic file (type png)
 <use ./Imagenes/image4.png>
-Package pdftex.def Info: ./Imagenes/image4.png  used on input line 115.
+Package pdftex.def Info: ./Imagenes/image4.png  used on input line 121.
 (pdftex.def)             Requested size: 345.0pt x 164.89447pt.
- [2 <./Imagenes/image1.png> <./Imagenes/image2.png> <./Imagenes/image3.png> <./Imagenes/image4.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 134--135
+ [3 <./Imagenes/image1.png> <./Imagenes/image2.png> <./Imagenes/image3.png> <./Imagenes/image4.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 140--141
 [][] 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 158--159
+Overfull \hbox (15.0pt too wide) in paragraph at lines 164--165
 [][] 
  []
 
-<./Imagenes/image8.png, id=31, 390.45876pt x 300.12125pt>
+<./Imagenes/image8.png, id=34, 390.45876pt x 300.12125pt>
 File: ./Imagenes/image8.png Graphic file (type png)
 <use ./Imagenes/image8.png>
-Package pdftex.def Info: ./Imagenes/image8.png  used on input line 167.
+Package pdftex.def Info: ./Imagenes/image8.png  used on input line 173.
 (pdftex.def)             Requested size: 120.7521pt x 92.81223pt.
-<./Imagenes/image5.png, id=32, 562.1pt x 119.44624pt>
+<./Imagenes/image5.png, id=35, 562.1pt x 119.44624pt>
 File: ./Imagenes/image5.png Graphic file (type png)
 <use ./Imagenes/image5.png>
-Package pdftex.def Info: ./Imagenes/image5.png  used on input line 174.
+Package pdftex.def Info: ./Imagenes/image5.png  used on input line 180.
 (pdftex.def)             Requested size: 189.75105pt x 40.32138pt.
-<./Imagenes/image7.png, id=33, 255.95625pt x 123.46124pt>
+<./Imagenes/image7.png, id=36, 255.95625pt x 123.46124pt>
 File: ./Imagenes/image7.png Graphic file (type png)
 <use ./Imagenes/image7.png>
-Package pdftex.def Info: ./Imagenes/image7.png  used on input line 182.
+Package pdftex.def Info: ./Imagenes/image7.png  used on input line 188.
 (pdftex.def)             Requested size: 86.25pt x 41.60326pt.
-[3 <./Imagenes/image8.png> <./Imagenes/image5.png> <./Imagenes/image7.png>]
-<./Imagenes/image6.png, id=38, 1324.95pt x 624.3325pt>
+[4 <./Imagenes/image8.png> <./Imagenes/image5.png> <./Imagenes/image7.png>]
+<./Imagenes/image6.png, id=41, 1324.95pt x 624.3325pt>
 File: ./Imagenes/image6.png Graphic file (type png)
 <use ./Imagenes/image6.png>
-Package pdftex.def Info: ./Imagenes/image6.png  used on input line 195.
+Package pdftex.def Info: ./Imagenes/image6.png  used on input line 201.
 (pdftex.def)             Requested size: 345.0pt x 162.56078pt.
-<./Imagenes/image10.png, id=39, 765.86125pt x 246.9225pt>
+<./Imagenes/image10.png, id=42, 765.86125pt x 246.9225pt>
 File: ./Imagenes/image10.png Graphic file (type png)
 <use ./Imagenes/image10.png>
-Package pdftex.def Info: ./Imagenes/image10.png  used on input line 212.
+Package pdftex.def Info: ./Imagenes/image10.png  used on input line 218.
 (pdftex.def)             Requested size: 189.75105pt x 61.1766pt.
-<./Imagenes/image9.png, id=40, 1079.03125pt x 447.6725pt>
+<./Imagenes/image9.png, id=43, 1079.03125pt x 447.6725pt>
 File: ./Imagenes/image9.png Graphic file (type png)
 <use ./Imagenes/image9.png>
-Package pdftex.def Info: ./Imagenes/image9.png  used on input line 219.
+Package pdftex.def Info: ./Imagenes/image9.png  used on input line 225.
 (pdftex.def)             Requested size: 362.25105pt x 150.29398pt.
 
-Overfull \hbox (17.25105pt too wide) in paragraph at lines 210--224
+Overfull \hbox (17.25105pt too wide) in paragraph at lines 216--230
  [] 
  []
 
-<./Imagenes/image11.png, id=41, 1923.185pt x 1032.85875pt>
+<./Imagenes/image11.png, id=44, 1923.185pt x 1032.85875pt>
 File: ./Imagenes/image11.png Graphic file (type png)
 <use ./Imagenes/image11.png>
-Package pdftex.def Info: ./Imagenes/image11.png  used on input line 229.
+Package pdftex.def Info: ./Imagenes/image11.png  used on input line 235.
 (pdftex.def)             Requested size: 345.0pt x 185.27614pt.
-[4 <./Imagenes/image6.png> <./Imagenes/image10.png> <./Imagenes/image9.png>]
-<./Imagenes/image12.png, id=45, 1925.1925pt x 1013.7875pt>
+[5 <./Imagenes/image6.png> <./Imagenes/image10.png> <./Imagenes/image9.png>]
+<./Imagenes/image12.png, id=48, 1925.1925pt x 1013.7875pt>
 File: ./Imagenes/image12.png Graphic file (type png)
 <use ./Imagenes/image12.png>
-Package pdftex.def Info: ./Imagenes/image12.png  used on input line 238.
+Package pdftex.def Info: ./Imagenes/image12.png  used on input line 244.
 (pdftex.def)             Requested size: 413.99895pt x 218.00647pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 238--239
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 244--245
  [][] 
  []
 
-[5 <./Imagenes/image11.png> <./Imagenes/image12.png>]
-<./Imagenes/image13.png, id=49, 1274.7625pt x 1022.82124pt>
+[6 <./Imagenes/image11.png> <./Imagenes/image12.png>]
+<./Imagenes/image13.png, id=53, 1274.7625pt x 1022.82124pt>
 File: ./Imagenes/image13.png Graphic file (type png)
 <use ./Imagenes/image13.png>
-Package pdftex.def Info: ./Imagenes/image13.png  used on input line 246.
+Package pdftex.def Info: ./Imagenes/image13.png  used on input line 252.
 (pdftex.def)             Requested size: 413.99895pt x 332.17886pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 246--247
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 252--253
  [][] 
  []
 
-[6 <./Imagenes/image13.png>]
-<./Imagenes/image19.png, id=54, 673.51625pt x 194.7275pt>
+[7 <./Imagenes/image13.png>]
+<./Imagenes/image19.png, id=57, 673.51625pt x 194.7275pt>
 File: ./Imagenes/image19.png Graphic file (type png)
 <use ./Imagenes/image19.png>
-Package pdftex.def Info: ./Imagenes/image19.png  used on input line 271.
+Package pdftex.def Info: ./Imagenes/image19.png  used on input line 277.
 (pdftex.def)             Requested size: 137.9979pt x 39.89859pt.
-<./Imagenes/image14.png, id=55, 510.90875pt x 481.8pt>
+<./Imagenes/image14.png, id=58, 510.90875pt x 481.8pt>
 File: ./Imagenes/image14.png Graphic file (type png)
 <use ./Imagenes/image14.png>
-Package pdftex.def Info: ./Imagenes/image14.png  used on input line 278.
+Package pdftex.def Info: ./Imagenes/image14.png  used on input line 284.
 (pdftex.def)             Requested size: 276.00105pt x 260.27104pt.
- [7 <./Imagenes/image19.png> <./Imagenes/image14.png>]
-<./Imagenes/image15.png, id=59, 1511.6475pt x 838.13126pt>
+ [8 <./Imagenes/image19.png> <./Imagenes/image14.png>]
+<./Imagenes/image15.png, id=62, 1511.6475pt x 838.13126pt>
 File: ./Imagenes/image15.png Graphic file (type png)
 <use ./Imagenes/image15.png>
-Package pdftex.def Info: ./Imagenes/image15.png  used on input line 287.
+Package pdftex.def Info: ./Imagenes/image15.png  used on input line 293.
 (pdftex.def)             Requested size: 413.99895pt x 229.53404pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 287--289
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 293--295
  [][] 
  []
 
-<./Imagenes/image16.png, id=60, 1898.09125pt x 946.53625pt>
+<./Imagenes/image16.png, id=63, 1898.09125pt x 946.53625pt>
 File: ./Imagenes/image16.png Graphic file (type png)
 <use ./Imagenes/image16.png>
-Package pdftex.def Info: ./Imagenes/image16.png  used on input line 294.
+Package pdftex.def Info: ./Imagenes/image16.png  used on input line 300.
 (pdftex.def)             Requested size: 413.99895pt x 206.4477pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 294--296
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 300--302
  [][] 
  []
 
-[8 <./Imagenes/image15.png> <./Imagenes/image16.png>]
-<./Imagenes/image17.png, id=64, 947.54pt x 341.275pt>
+[9 <./Imagenes/image15.png> <./Imagenes/image16.png>]
+<./Imagenes/image17.png, id=67, 947.54pt x 341.275pt>
 File: ./Imagenes/image17.png Graphic file (type png)
 <use ./Imagenes/image17.png>
-Package pdftex.def Info: ./Imagenes/image17.png  used on input line 302.
+Package pdftex.def Info: ./Imagenes/image17.png  used on input line 308.
 (pdftex.def)             Requested size: 276.00105pt x 99.40463pt.
-<./Imagenes/image25.png, id=65, 629.35126pt x 207.77625pt>
+<./Imagenes/image25.png, id=68, 629.35126pt x 207.77625pt>
 File: ./Imagenes/image25.png Graphic file (type png)
 <use ./Imagenes/image25.png>
-Package pdftex.def Info: ./Imagenes/image25.png  used on input line 315.
+Package pdftex.def Info: ./Imagenes/image25.png  used on input line 321.
 (pdftex.def)             Requested size: 137.9979pt x 45.55873pt.
-<./Imagenes/image26.png, id=66, 496.85625pt x 443.6575pt>
+<./Imagenes/image26.png, id=69, 496.85625pt x 443.6575pt>
 File: ./Imagenes/image26.png Graphic file (type png)
 <use ./Imagenes/image26.png>
-Package pdftex.def Info: ./Imagenes/image26.png  used on input line 322.
+Package pdftex.def Info: ./Imagenes/image26.png  used on input line 328.
 (pdftex.def)             Requested size: 189.75105pt x 169.4378pt.
- [9 <./Imagenes/image17.png> <./Imagenes/image25.png> <./Imagenes/image26.png>]
-<./Imagenes/image27.png, id=70, 1924.18875pt x 1026.83624pt>
+ [10 <./Imagenes/image17.png> <./Imagenes/image25.png> <./Imagenes/image26.png>]
+<./Imagenes/image27.png, id=73, 1924.18875pt x 1026.83624pt>
 File: ./Imagenes/image27.png Graphic file (type png)
 <use ./Imagenes/image27.png>
-Package pdftex.def Info: ./Imagenes/image27.png  used on input line 331.
+Package pdftex.def Info: ./Imagenes/image27.png  used on input line 337.
 (pdftex.def)             Requested size: 413.99895pt x 220.92216pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 331--333
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 337--339
  [][] 
  []
 
-<./Imagenes/image28.png, id=71, 1926.19624pt x 1005.7575pt>
+<./Imagenes/image28.png, id=74, 1926.19624pt x 1005.7575pt>
 File: ./Imagenes/image28.png Graphic file (type png)
 <use ./Imagenes/image28.png>
-Package pdftex.def Info: ./Imagenes/image28.png  used on input line 338.
+Package pdftex.def Info: ./Imagenes/image28.png  used on input line 344.
 (pdftex.def)             Requested size: 413.99895pt x 216.1569pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 338--340
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 344--346
  [][] 
  []
 
-[10 <./Imagenes/image27.png> <./Imagenes/image28.png>]
-<./Imagenes/image29.png, id=75, 828.09375pt x 401.5pt>
+[11 <./Imagenes/image27.png> <./Imagenes/image28.png>]
+<./Imagenes/image29.png, id=78, 828.09375pt x 401.5pt>
 File: ./Imagenes/image29.png Graphic file (type png)
 <use ./Imagenes/image29.png>
-Package pdftex.def Info: ./Imagenes/image29.png  used on input line 346.
+Package pdftex.def Info: ./Imagenes/image29.png  used on input line 352.
 (pdftex.def)             Requested size: 276.00105pt x 133.8187pt.
-<./Imagenes/image20.png, id=76, 453.695pt x 154.5775pt>
+<./Imagenes/image20.png, id=79, 453.695pt x 154.5775pt>
 File: ./Imagenes/image20.png Graphic file (type png)
 <use ./Imagenes/image20.png>
-Package pdftex.def Info: ./Imagenes/image20.png  used on input line 357.
+Package pdftex.def Info: ./Imagenes/image20.png  used on input line 363.
 (pdftex.def)             Requested size: 103.50105pt x 35.26195pt.
-<./Imagenes/image21.png, id=77, 511.9125pt x 493.845pt>
+<./Imagenes/image21.png, id=80, 511.9125pt x 493.845pt>
 File: ./Imagenes/image21.png Graphic file (type png)
 <use ./Imagenes/image21.png>
-Package pdftex.def Info: ./Imagenes/image21.png  used on input line 364.
+Package pdftex.def Info: ./Imagenes/image21.png  used on input line 370.
 (pdftex.def)             Requested size: 172.5pt x 166.41306pt.
- [11 <./Imagenes/image29.png> <./Imagenes/image20.png> <./Imagenes/image21.png>]
-<./Imagenes/image22.png, id=81, 1924.18875pt x 1035.87pt>
+ [12 <./Imagenes/image29.png> <./Imagenes/image20.png> <./Imagenes/image21.png>]
+<./Imagenes/image22.png, id=85, 1924.18875pt x 1035.87pt>
 File: ./Imagenes/image22.png Graphic file (type png)
 <use ./Imagenes/image22.png>
-Package pdftex.def Info: ./Imagenes/image22.png  used on input line 373.
+Package pdftex.def Info: ./Imagenes/image22.png  used on input line 379.
 (pdftex.def)             Requested size: 413.99895pt x 222.86577pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 373--375
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 379--381
  [][] 
  []
 
-<./Imagenes/image23.png, id=82, 1925.1925pt x 1017.8025pt>
+<./Imagenes/image23.png, id=86, 1925.1925pt x 1017.8025pt>
 File: ./Imagenes/image23.png Graphic file (type png)
 <use ./Imagenes/image23.png>
-Package pdftex.def Info: ./Imagenes/image23.png  used on input line 380.
+Package pdftex.def Info: ./Imagenes/image23.png  used on input line 386.
 (pdftex.def)             Requested size: 413.99895pt x 218.86986pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 380--382
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 386--388
  [][] 
  []
 
-[12 <./Imagenes/image22.png> <./Imagenes/image23.png>]
-<./Imagenes/image24.png, id=87, 884.30376pt x 333.245pt>
+[13 <./Imagenes/image22.png> <./Imagenes/image23.png>]
+<./Imagenes/image24.png, id=90, 884.30376pt x 333.245pt>
 File: ./Imagenes/image24.png Graphic file (type png)
 <use ./Imagenes/image24.png>
-Package pdftex.def Info: ./Imagenes/image24.png  used on input line 388.
+Package pdftex.def Info: ./Imagenes/image24.png  used on input line 394.
 (pdftex.def)             Requested size: 276.00105pt x 104.01167pt.
- [13 <./Imagenes/image24.png>] [14]
-<./Imagenes/image30.png, id=95, 1925.1925pt x 1004.75375pt>
+ [14 <./Imagenes/image24.png>] [15]
+<./Imagenes/image30.png, id=98, 1925.1925pt x 1004.75375pt>
 File: ./Imagenes/image30.png Graphic file (type png)
 <use ./Imagenes/image30.png>
-Package pdftex.def Info: ./Imagenes/image30.png  used on input line 458.
+Package pdftex.def Info: ./Imagenes/image30.png  used on input line 464.
 (pdftex.def)             Requested size: 345.0pt x 180.05064pt.
-<./Imagenes/image31.png, id=96, 1923.185pt x 999.735pt>
+<./Imagenes/image31.png, id=99, 1923.185pt x 999.735pt>
 File: ./Imagenes/image31.png Graphic file (type png)
 <use ./Imagenes/image31.png>
-Package pdftex.def Info: ./Imagenes/image31.png  used on input line 465.
+Package pdftex.def Info: ./Imagenes/image31.png  used on input line 471.
 (pdftex.def)             Requested size: 345.0pt x 179.33434pt.
- [15 <./Imagenes/image30.png> <./Imagenes/image31.png>] (./Examen.aux)
+ [16 <./Imagenes/image30.png> <./Imagenes/image31.png>] (./Examen.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4359 strings out of 478051
- 73119 string characters out of 5840942
- 1858330 words of memory out of 5000000
- 24437 multiletter control sequences out of 15000+600000
+ 4393 strings out of 478051
+ 73854 string characters out of 5840942
+ 1859330 words of memory out of 5000000
+ 24464 multiletter control sequences out of 15000+600000
  520514 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  67i,9n,77p,370b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Examen.pdf (16 pages, 1337309 bytes).
+Output written on Examen.pdf (17 pages, 1338869 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 162 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
