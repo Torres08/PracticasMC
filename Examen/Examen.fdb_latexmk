@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1704146809 "/home/torres/Documents/Github/PracticasMC/Examen/Examen.tex" "Examen.pdf" "Examen" 1704146810 0
+["pdflatex"] 1704811867 "/home/torres/Documents/Github/PracticasMC/Examen/Examen.tex" "Examen.pdf" "Examen" 1704811869 0
   "/etc/texmf/web2c/texmf.cnf" 1697468406 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/torres/Documents/Github/PracticasMC/Examen/Examen.tex" 1704146808 17943 53997badf4872c067041e4e7c4464d86 ""
+  "/home/torres/Documents/Github/PracticasMC/Examen/Examen.tex" 1704811865 19127 968c6f503b91a6ff67672d00c4c61be4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -68,8 +68,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1697468412 125915 807ff72f6023b33a59c427bfd156a3d1 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1697468428 6475481 5e0faf0df09b541759db8328f50c952a ""
-  "Examen.aux" 1704146810 5015 01db33aa653c77582cb6f90714278876 "pdflatex"
-  "Examen.tex" 1704146808 17943 53997badf4872c067041e4e7c4464d86 ""
+  "Examen.aux" 1704811868 2475 5494a050a10722c01e9aa9407cda8fb3 "pdflatex"
+  "Examen.tex" 1704811865 19127 968c6f503b91a6ff67672d00c4c61be4 ""
   "Imagenes/image1.png" 1704129862 2515 e9a722f73698869263949d365be87b8b ""
   "Imagenes/image10.png" 1704132295 4111 c0afb1a463c7057c3666ddb307c10113 ""
   "Imagenes/image11.png" 1704133080 61423 14b033d2cb46d78d1f6019f212e5a6f3 ""

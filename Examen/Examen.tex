@@ -21,7 +21,7 @@
             \centering
             {\includegraphics[width=1\textwidth]{./Imagenes/logo_universidad_de_granada.png}\par}
             \vspace{1cm}
-            {\scshape\Large Escuela Tecnica Superior de Ingenieria Informatica y Telecomunicaciones \par}
+            {\scshape\Large Escuela Técnica Superior de Ingeniería Informatica y Telecomunicaciones \par}
             \vspace{2.5cm}
             {\scshape\Huge Examen Modelos de Computación \par}
             \vspace{1cm}
@@ -29,7 +29,7 @@
             \vfill
             {\Large Juan Luis Torres Ramos \par}
             \vspace{0.5cm}
-            {\large 24 Octubre 2023 \par}
+            {\large 15 Enero 2024 \par}
         \end{titlepage}
 
 
@@ -38,19 +38,18 @@
         %
 
         \section*{Ejercicio 1}
-            \textbf{Obtener un modelo de calculo para $L = \{ U \mid U \in \{a, b\}^{\pm} \text{ y } N_a(U) = N_b(U) \}$.}
+            \textbf{1. Obtener un modelo de calculo para $L = \{ U \mid U \in \{a, b\}^{\pm} \text{ y } N_a(U) = N_b(U) \}$.}
+            
             
             \vspace{\baselineskip} % paso linea
-            Queremos encontrar un modelo de cálculo para este lenguaje. Para ello intentaremos estudiar todos los casos posibles.
+
+            Para programar la gramática que genera este lenguaje, primero observamos que busca cadenas con el mismo número de $b$'s que de $a$'s $N_a(U) = N_b(U)$. 
+            Al aplicar el lema del bombeo, nos dice que el lenguaje no es regular por lo que intentaremos encontrar una gramática libre de contexto. 
             \vspace{\baselineskip} % paso linea
 
-            Para programar la gramática que genera este lenguaje, primero observamos que busca cadenas con el mismo número de $b$'s que de $a$'s. 
-            Intentaremos encontrar una gramática libre de contexto. Al aplicar el lema del bombeo, nos dice que el lenguaje no es regular.
-            \vspace{\baselineskip} % paso linea
-
-            Comenzamos con la producción inicial $S$ que genera $a$ y algo más, es decir, $S \rightarrow aX$, donde $X$ es una variable que determinaremos. 
+            Tenemos que estudiar todos los casos posibles. Comenzamos con la producción inicial $S$ que genera $a$ y algo más, es decir, $S \rightarrow aX$, donde $X$ es una variable que determinaremos. 
             Esta producción debe garantizar que no se viole la condición $N_a(b) = N_b(b)$. Esto nos lleva a la producción $S \rightarrow aB$, 
-            con $B \rightarrow b$, esta ultima produccion simepre va a haber una $b$ de más.
+            con $B \rightarrow b$, esta ultima produccion simepre va a haber una $b$ de más, asi cumplimos la condicion anterior.
             \vspace{\baselineskip} % paso linea
 
             De igual manera, razonamos en la dirección opuesta 
@@ -63,8 +62,8 @@
             De manera análoga, obtenemos $A \rightarrow aS$ para el caso contrario.
             \vspace{\baselineskip} % paso linea
 
-            Estudiamos el caso $B \rightarrow aX$. 
-            Necesitamos una $b$ adicional para cumplir la condición de $B$ , 
+            Estudiamos el caso $B \rightarrow aX$. +
+            Necesitamos una $b$ adicional para cumplir la condición de $B$ (tener una $b$ de más), 
             así que definimos $B \rightarrow aBB$, asegurando que la primera 
             $B$ compense una $a$ y luego llamando nuevamente para tener un $B$ 
             adicional. De manera inversa, obtenemos $A \rightarrow bAA$.
@@ -82,21 +81,22 @@
 
            
             \newpage
-            \textbf{Comprobacion con JFLAP}
+            \textbf{Comprobacion con JFLAP: }
+            generamos la gramatica en JFLAP y comprobamos que genera el lenguaje $L = \{ U \mid U \in \{a, b\}^{\pm} \text{ y } N_a(U) = N_b(U) \}$.
             \begin{figure}[h] 
             \centering
                 \centering
                 \begin{subfigure}[b]{0.35\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{./Imagenes/image1.png}
-                    \caption{la producción}
+                    \caption{La producción}
                     \label{fig:label1}
                 \end{subfigure}
                 \hfill
                 \begin{subfigure}[b]{0.55\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{./Imagenes/image2.png}
-                    \caption{gramatica libre contexto}
+                    \caption{Comprobación gramatica libre contexto}
                     \label{fig:label2}
                 \end{subfigure}
                 \vspace{0.5cm} 
@@ -113,18 +113,11 @@
             \begin{figure}[!h]
                 \centering
                 \includegraphics[width=\textwidth]{./Imagenes/image4.png}
-                \caption{la cadena $aabb$}
+                \caption*{(d) árbol de produccion de la cadena $aaaabbabbb$}
                 \label{fig:label4}
             \end{figure}
-            
-            
-            
-
                 
         \newpage
-
-
-
 
         % 
         % Ejercicio 2
@@ -132,8 +125,8 @@
 
         \section*{Ejercicio 2}
         \begin{enumerate}
-            \item \textbf{determina si la gramática $G = (\{S,A,B\}, \{a,b,c,d\}. P,S)$ donde $P$ es el conjunto regla producción
-            genera un lenguaje tipo 3.}
+            \item \textbf{Determina si la gramática $G = (\{S,A,B\}, \{a,b,c,d\}, P,S)$ donde $P$ es el conjunto regla producción
+            genera un lenguaje tipo 3:}
             
             \begin{tabularx}{\textwidth}{XXX}
                 $S \rightarrow AB$ & $A \rightarrow Ab$ & $A \rightarrow a$\\
@@ -144,24 +137,23 @@
             Obtener el modelo de cálculo más optimo para resolver el problema del apartado A}
         \end{enumerate}
         
-        \vspace{\baselineskip} % paso linea
 
         \textbf{Apartado 1:}
         Es un tipico problema de optimizacion. Primero nos fijamos en que no es una gramatica regular por producciones
         como $B \rightarrow cB$ o $A \rightarrow Ab$
-        Generar un lenguaje de tipo 3 significa que sea libre de contexto
-        Estudio una produccion de ejemplo
+        Generar un lenguaje de tipo 3 significa que sea libre de contexto.
+        Estudio una produccion y genero una cadena de ejemplo:
         $$ S \rightarrow AB \rightarrow AbB \rightarrow AbbB \rightarrow abbcB \rightarrow abbccB \rightarrow abbcccB \rightarrow abbcccd$$ 
 
-        Si nos fijameos genera el lenguaje $L = \{ab^ic^jd : i, j \in \mathbb{N}  \}$, vemos si existe una gramatica libre de contexto que genere este lenguaje,
-        es decir optimizamos.
+        Si nos fijamos genera el lenguaje $L = \{ab^ic^jd : i, j \in \mathbb{N}  \}$ (es decir genera al principio una a, al final una d y entre medias un numero $i$ de b y un numero $j$ de c, en el orden descrito). Vemos si existe una gramatica libre de contexto que genere este lenguaje,
+        es decir, optimizamos.
 
         \vspace{\baselineskip} % paso linea
         Este lenguaje se genera con la gramatica $G = (\{S,A,B\}, \{a,b,c,d\}. P,S)$ donde $P$ es el conjunto regla producción
         \vspace{\baselineskip} % paso linea
 
         \begin{tabularx}{\textwidth}{XXX}
-            $S \rightarrow AB$ & $B \rightarrow C$ & $C \rightarrow d$\\
+            $S \rightarrow aB$ & $B \rightarrow C$ & $C \rightarrow d$\\
             $B \rightarrow bB$ & $C \rightarrow cC$\\
         \end{tabularx}
 
@@ -201,14 +193,15 @@
         \begin{figure}[!h]
             \centering
             \includegraphics[width=\textwidth]{./Imagenes/image6.png}
-            \caption{la cadena $aabb$}
+            \caption*{ (d) árbol de produccion de la cadena  $aabb$}
             \label{fig:label4}
         \end{figure}
         \vspace{\baselineskip} % paso linea
-        \textbf{Apartado 2:}
 
-        Automata no deterministico con transiciones nulas
-        Con la produccion anterior en JFLAP he insertado la gramatica y luego he Convert-right linear gramar to FA
+
+        \textbf{Apartado 2:}
+        Quiero crear un autómata no determinístico con transiciones nulas.
+        Con la produccion anterior en JFLAP he insertado la gramatica y luego la he convertido a automata finito (Convert-right linear gramar to FA)
         \vspace{\baselineskip} % paso linea
 
             \begin{figure}[!h] 
@@ -217,38 +210,41 @@
                 \begin{subfigure}[b]{0.55\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{./Imagenes/image10.png}
+                    \caption{Producción}
                     \label{fig:label1}
                 \end{subfigure}
                 \hfill
                 \begin{subfigure}[b]{1.05\textwidth}
                     \centering
                     \includegraphics[width=\textwidth]{./Imagenes/image9.png}
+                    \caption*{ (b) Automata Finito con transiciones nulas generado}
                     \label{fig:label2}
                 \end{subfigure}
                 \vspace{0.5cm} 
             \end{figure}
         
-        Automata finito deterministico
-        Con un FA, le doy a convert to DFA (automata finito deterministico)
+        Con un FA, lo he convertido a automata finito deterministico (convert to DFA)
         \begin{figure}[!h]
             \centering
-            \includegraphics[width=1.2\textwidth]{./Imagenes/image11.png}
+            \includegraphics[width=1\textwidth]{./Imagenes/image11.png}
+            \caption*{(c) Automata finito deterministico}
             \label{fig:label4}
         \end{figure}
 
         Automata finito deterministico minimal
-        desde el DFA en convert a minimize DFA, vemos que no se puede minimizar por que da el anterior
+        desde el DFA elo minimozo, vemos que no se puede minimizar por que da el mismo que el anterior
         \begin{figure}[!h]
             \centering
             \includegraphics[width=1.2\textwidth]{./Imagenes/image12.png}
+            \caption*{(d) Automata finito deterministico minimal}
             \label{fig:label4}
         \end{figure}
 
-
-        Ejemplo de ejecucion
+        \newpage 
         \begin{figure}[!h]
             \centering
             \includegraphics[width=1.2\textwidth]{./Imagenes/image13.png}
+            \caption*{(e) Ejemplo con la cadena $abbbccd$}
             \label{fig:label4}
         \end{figure}
 
@@ -267,23 +263,21 @@
         \vspace{\baselineskip} % paso linea
 
         $$ 1*(01*01*)*$$
-        Forzamos a de esta manera que comience por 1 y que vayan apareciendo ceros de manera par , de dos en dos
+        Forzamos a de esta manera que comience por 1 y que vayan apareciendo ceros de manera par, de dos en dos
+        . Simulamos en JFLAP, Convertimos la expresion regular a un automata finito deterministico minimal
         
-        Regular expresion to NFA
-        NFA a DFA (deterministico)
-       
         \begin{figure}[!h]
             \centering
             \includegraphics[width=0.4\textwidth]{./Imagenes/image19.png}
             \label{fig:label4}
-            \caption{Expresion regular}
+            \caption*{(a) Expresion regular}
         \end{figure}
 
         \begin{figure}[!h]
             \centering
             \includegraphics[width=0.8\textwidth]{./Imagenes/image14.png}
             \label{fig:label4}
-            \caption{Automata finito no deterministico}
+            \caption*{(b) Automata finito no deterministico}
         \end{figure}
 
         \newpage
@@ -292,14 +286,14 @@
             \centering
             \includegraphics[width=1.2\textwidth]{./Imagenes/image15.png}
             \label{fig:label4}
-            \caption{Automata finito  deterministico}
+            \caption*{(c) Automata finito  deterministico}
         \end{figure}
 
         \begin{figure}[!h]
             \centering
             \includegraphics[width=1.2\textwidth]{./Imagenes/image16.png}
             \label{fig:label4}
-            \caption{Automata finito deterministico minimal}
+            \caption*{(d) Automata finito deterministico minimal}
         \end{figure}
 
         \newpage
@@ -307,26 +301,27 @@
             \centering
             \includegraphics[width=0.8\textwidth]{./Imagenes/image17.png}
             \label{fig:label4}
-            \caption{ejemplo de ejecucion}
+            \caption*{(e) Ejemplo de ejecucion}
         \end{figure}
 
         \vspace{\baselineskip} % paso linea
         \textbf{Apartado 2: Construir una expresion regular para las palabras que contengan a 01100 como subcadena }
          $$(0+1)*0110(0+1)*$$
         Una cadena que comience y termine por cualquier combinacion de 0 y 1 y contenga 0110
+        . Simulamos en JFLAP, Convertimos la expresion regular a un automata finito deterministico minimal
 
         \begin{figure}[!h]
             \centering
             \includegraphics[width=0.4\textwidth]{./Imagenes/image25.png}
             \label{fig:label4}
-            \caption{Expresion regular}
+            \caption*{(a) Expresion regular}
         \end{figure}
 
         \begin{figure}[!h]
             \centering
             \includegraphics[width=0.55\textwidth]{./Imagenes/image26.png}
             \label{fig:label4}
-            \caption{Automata finito no deterministico}
+            \caption*{(b) Automata finito no deterministico}
         \end{figure}
 
         \newpage
@@ -335,14 +330,14 @@
             \centering
             \includegraphics[width=1.2\textwidth]{./Imagenes/image27.png}
             \label{fig:label4}
-            \caption{Automata finito  deterministico}
+            \caption*{(c) Automata finito  deterministico}
         \end{figure}
 
         \begin{figure}[!h]
             \centering
             \includegraphics[width=1.2\textwidth]{./Imagenes/image28.png}
             \label{fig:label4}
-            \caption{Automata finito deterministico minimal}
+            \caption*{(d) Automata finito deterministico minimal}
         \end{figure}
 
         \newpage
@@ -350,25 +345,25 @@
             \centering
             \includegraphics[width=0.8\textwidth]{./Imagenes/image29.png}
             \label{fig:label4}
-            \caption{ejemplo de ejecucion}
+            \caption*{(e) ejemplo de ejecucion}
         \end{figure}
 
         \textbf{Apartado 3: Construir una expresion regular para el conjunto de palabras que empiezan por 000 y tales que esta subcadena solo se encuentra al principio de la palabra}
         $$ 000(1+10+100)*$$
-        Comienza por 000 y luego no vuelve a aparecer 000
-        
+        Comienza por 000 y luego no vuelve a aparecer 000. Simulamos en JFLAP, Convertimos la expresion regular a un automata finito deterministico minimal
+
         \begin{figure}[!h]
             \centering
-            \includegraphics[width=0.4\textwidth]{./Imagenes/image20.png}
+            \includegraphics[width=0.3\textwidth]{./Imagenes/image20.png}
             \label{fig:label4}
-            \caption{Expresion regular}
+            \caption*{(a) Expresion regular}
         \end{figure}
 
         \begin{figure}[!h]
             \centering
             \includegraphics[width=0.5\textwidth]{./Imagenes/image21.png}
             \label{fig:label4}
-            \caption{Automata finito no deterministico}
+            \caption*{(b) Automata finito no deterministico}
         \end{figure}
 
         \newpage
@@ -377,14 +372,14 @@
             \centering
             \includegraphics[width=1.2\textwidth]{./Imagenes/image22.png}
             \label{fig:label4}
-            \caption{Automata finito  deterministico}
+            \caption*{(c) Automata finito  deterministico}
         \end{figure}
 
         \begin{figure}[!h]
             \centering
             \includegraphics[width=1.2\textwidth]{./Imagenes/image23.png}
             \label{fig:label4}
-            \caption{Automata finito deterministico minimal}
+            \caption*{(d) Automata finito deterministico minimal}
         \end{figure}
 
         \newpage
@@ -392,7 +387,7 @@
             \centering
             \includegraphics[width=0.8\textwidth]{./Imagenes/image24.png}
             \label{fig:label4}
-            \caption{ejemplo de ejecucion}
+            \caption*{(e) ejemplo de ejecucion}
         \end{figure}
 
         
@@ -409,6 +404,9 @@
             \item \textbf{¿Es $L = \{ U \in \{0, 1\}^* /\  u=u^{-1} \}$. regular? }
             \item \textbf{Encontrar un modelo de calculo para $L$ }
         \end{enumerate}
+        El lenguaje $L = \{ U \in \{0, 1\}^* /\  u=u^{-1} \}$ es el conjunto de cadenas binarias que son palíndromos (secuencias de 0 y 1). Un palindromo es 
+        una cadena que se lee igual de izquierda a derecha. Para saber si es regular o no aplico el Lema de Bombeo.
+        \vspace{\baselineskip} % Salto de línea
 
         Definimos el Lema de Bombeo: Sea \( L \) un conjunto regular. Entonces, existe un \( n \in \mathbb{N} \) tal que para todo \( z \in L \) con \( |z| \geq n \), se puede expresar como \( z = u v w \) donde:
         \begin{enumerate}
@@ -424,12 +422,12 @@
         aún obtener una cadena en el lenguaje. 
         Este lema siempre es verdadero para lenguajes regulares. 
         Si no es verdadero para un lenguaje, entonces ese lenguaje 
-        no es regular. Para demostrar esto, buscamos un contraejemplo.
+        no es regular. Estudiamos el caso del contraejemplo.
         
         \vspace{\baselineskip} % Salto de línea
         
         
-        Suponemos lo contrario: \( L \) es regular y satisface el lema de bombeo. Buscamos un contraejemplo.
+        Contraejemplo: \( L \) es regular y satisface el lema de bombeo.
         \[ \exists n \in \mathbb{N},\quad \forall Z \in L,\quad |Z| \geq n,\quad Z = 0^n 1^n 0^n = uvw \]
         
         
@@ -451,21 +449,21 @@
         \textbf{Apartado 2: Obtener un modelo de calculo para $L$}         \vspace{\baselineskip} % paso linea
 
          El modelo es no deterministico, lo que significa que no diferencia cuando cambia entre estados. 
-         Simula todos los posibles casos.
-         q0 se encarga de la parte de la derecha del palindromo y q1 de la parte izquierda 
+         Simulo todos los posibles casos.
+         $q0$ se encarga de la parte de la derecha del palindromo y $q1$ de la parte izquierda 
          Cuando el numero es par el cambio se hace con el 0 o 1. Cuando el numero es impar el cambio se haria con $\lambda$ 
          
         \begin{figure}[!h]
             \centering
             \includegraphics[width=\textwidth]{./Imagenes/image30.png}  
             \label{fig:label4}
-            \caption{caso impar 10001}
+            \caption*{(a) caso impar 10001}
         \end{figure}
 
         \begin{figure}[!h]
             \centering
             \includegraphics[width=\textwidth]{./Imagenes/image31.png}
             \label{fig:label4}
-            \caption{caso par 0110}
+            \caption*{(b) caso par 0110}
         \end{figure}
     \end{document}
